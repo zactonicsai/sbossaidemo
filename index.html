@@ -1061,6 +1061,301 @@ const USE_CASES = {
 };
 
 /* ============================================================
+   MANUAL STEPS — How to do each use case yourself with Claude
+   ============================================================ */
+const MANUAL_STEPS = {
+  inventory: {
+    intro: "You can do a complete inventory analysis with just Claude and a CSV export. About 10 minutes per session. Run it weekly.",
+    uploads: ["Sales export from your POS (CSV) — last 60-90 days minimum", "Optional: current stock levels (CSV)"],
+    steps: [
+      { action: "Export your sales data", detail: "Square: Reports → Sales → Export. Shopify: Orders → Export. Toast: Reports → Sales by Item. Save the CSV to your computer." },
+      { action: "Open claude.ai and attach the file", detail: "Click the + or paperclip icon in the chat box and select your CSV. Drag-and-drop also works." },
+      { action: "Paste this prompt", detail: "Edit the [bracketed parts] for your business.", prompt: "I run a [women's boutique / hardware store / coffee shop]. The attached CSV is my sales data for the last [60] days.\n\nPlease do the following:\n\n1. List my top 10 best-selling items by units sold.\n2. Calculate weekly sales velocity (units per week) for each.\n3. Flag any items that, at the current pace, will run out within 21 days.\n4. Recommend a specific reorder quantity for each at-risk item to cover the next 60 days.\n5. Note any patterns: busiest day of week, slow movers, items selling together.\n\nReturn the result as a clean table I can hand to my team. Use plain English, no jargon." },
+      { action: "Review and ask follow-ups", detail: "Push back when something looks off: \"Why did you flag X?\" or \"What about Christmas seasonality?\" Treat Claude like a smart intern who needs your context." },
+      { action: "Save the output", detail: "Copy the table into Google Sheets, email to your team, or screenshot. You just did hours of analysis in minutes." }
+    ]
+  },
+  productRecs: {
+    intro: "You won't run a live recommendation engine this way, but you can mass-produce 'frequently bought together' suggestions for your top products in one session.",
+    uploads: ["Order history CSV with customer ID and items per order"],
+    steps: [
+      { action: "Export your order history", detail: "Most e-commerce platforms have an Orders → Export option. Make sure customer ID and line items are included." },
+      { action: "Upload to Claude and prompt", prompt: "Attached is my order history. For each of my top 20 products by sales volume, identify the 3 items most often purchased together with that product (in the same order or by the same customer within 30 days).\n\nReturn this as a table with columns: Main Product | Recommendation 1 | Recommendation 2 | Recommendation 3 | Confidence (high/medium/low based on how often this combo appears).\n\nThen, for the 5 strongest combinations, write a one-sentence sales pitch I could use on the product page (e.g., 'Pairs perfectly with...')." },
+      { action: "Add the recommendations to your product pages", detail: "Manually update your top sellers with the suggested pairings. Big lift in average order value, no app subscription needed." }
+    ]
+  },
+  customerChat: {
+    intro: "Even before building a real chatbot, you can test what one would say. Use Claude as your 'rehearsal room' — you'll sharpen your FAQ in the process.",
+    uploads: ["Your FAQ document, return policy, store hours, etc. (PDF, Word, or just paste text)"],
+    steps: [
+      { action: "Gather your help docs", detail: "Pull together everything a customer might ask about: shipping, returns, sizing, hours, services, prices. Even rough notes are fine." },
+      { action: "Upload to Claude and set up", prompt: "Attached are my store's policies and FAQ. I want you to act as my customer service chatbot.\n\nRules:\n- Only answer using the information I gave you. If something isn't covered, say 'Let me grab a teammate for that' and don't make anything up.\n- Be friendly, concise, no more than 3 sentences per reply.\n- If a customer is upset, acknowledge it first before answering.\n\nI'm going to send you example questions next. Reply as the chatbot would." },
+      { action: "Test with real customer questions", detail: "Send the most common questions you actually get. Note where Claude struggled — that's a gap in your FAQ. Update your docs and try again." },
+      { action: "Use the refined FAQ as your chatbot's knowledge base", detail: "Whether you build with a tool like Tidio or stay manual, you now have a battle-tested knowledge document." }
+    ]
+  },
+  salesForecast: {
+    intro: "Skip the BI software. Claude can read your sales data and forecast next month or quarter in plain English.",
+    uploads: ["Historical sales CSV (12 months ideal, 3 months minimum)"],
+    steps: [
+      { action: "Export at least 3 months of sales data", detail: "Daily or weekly granularity. Include date and revenue at minimum. Item-level detail is even better." },
+      { action: "Upload to Claude and ask for the forecast", prompt: "Attached is my sales data for [time period]. Please:\n\n1. Identify trends: Is overall revenue growing, flat, or shrinking?\n2. Find seasonal patterns (day of week, week of month, monthly).\n3. Forecast revenue for the next 30, 60, and 90 days. Give a low / expected / high range.\n4. Flag any risks I should plan for (e.g., a slow month coming, dependence on a single product).\n5. Suggest 3 actions I should take now based on the forecast.\n\nExplain your reasoning in plain English. I'm a small business owner, not a data scientist." },
+      { action: "Sanity-check against your gut", detail: "If the forecast feels off, tell Claude why ('We're opening a new location in March') and ask it to redo with that context." }
+    ]
+  },
+  emailMarketing: {
+    intro: "Write a month of marketing emails in one Claude session. Personal, on-brand, and faster than any newsletter platform's AI.",
+    uploads: ["Optional: a few past emails that performed well, as examples of your voice"],
+    steps: [
+      { action: "Set up the conversation with your brand info", prompt: "I run a [bakery / personal training studio / accounting firm]. My customers are [busy parents in their 30s and 40s / small business owners / etc.]. My brand voice is [warm, casual, slightly funny / professional but human / etc.].\n\nIn this conversation, I'll ask you to write marketing emails. Always:\n- Match my voice\n- Keep emails under 150 words\n- Include one clear call to action\n- Suggest 3 subject line options for A/B testing\n- Tell me the best day/time to send for my audience" },
+      { action: "Request a batch of emails for the month", prompt: "Draft 4 emails for next month with these themes:\n\n1. New seasonal product launch (you choose what fits the season)\n2. A customer story / testimonial highlight\n3. A behind-the-scenes peek at how we work\n4. A limited-time offer (10% off, free consultation, etc.)\n\nFor each: subject line options + email body + CTA + suggested send time." },
+      { action: "Refine and schedule", detail: "Read each email out loud — does it sound like you? Tweak anything that doesn't. Then paste into Mailchimp / Klaviyo / your tool and schedule." }
+    ]
+  },
+  menuOptimize: {
+    intro: "A 30-minute session with Claude beats most 'menu engineering' consulting reports.",
+    uploads: ["POS export with item-level sales (units sold + price + ideally cost) for at least 30 days"],
+    steps: [
+      { action: "Export your menu sales data", detail: "Toast: Reports → Sales by Item. Square: Reports → Items. Include item name, quantity sold, revenue, and food cost if available." },
+      { action: "Upload to Claude and run menu engineering", prompt: "Attached is my restaurant's item-level sales for the last [30] days.\n\nPlease run a classic menu engineering analysis:\n\n1. Categorize each item as: Star (high profit + popular), Plowhorse (popular but low profit), Puzzle (high profit but unpopular), or Dog (low profit + unpopular).\n2. For Stars — recommend ways to feature them more.\n3. For Plowhorses — suggest price increases or recipe tweaks to lift margin.\n4. For Puzzles — suggest how to promote them (rename, redesign, server scripts).\n5. For Dogs — recommend whether to drop them or fix them.\n\nGive me a one-page summary I could implement next week. Use plain language." },
+      { action: "Make changes one section at a time", detail: "Don't redesign the whole menu Monday. Start with the Dogs — drop or fix 1-2. Then promote a Star. Measure results before moving on." }
+    ]
+  },
+  reservations: {
+    intro: "If you can't justify OpenTable yet, you can run reservations through email/SMS using Claude to draft and reply.",
+    steps: [
+      { action: "Set Claude up as your reservation drafter", prompt: "I run a small restaurant. I'll forward you reservation requests from customers (email or SMS). For each, please draft a reply that:\n\n- Confirms or politely declines\n- Asks any missing info (party size, date, time, dietary needs)\n- Confirms our policies (no-show fee, cancellation window)\n- Sounds warm and human, not corporate\n\nKeep replies under 100 words. Tell me at the end if you need any info from me to confirm." },
+      { action: "Forward each request and copy Claude's reply", detail: "Paste the reply back to the customer. Quick way to never sound like a stressed manager." },
+      { action: "Build your real booking system later", detail: "Once you hit ~30 reservations a week, switch to a tool like Square Appointments or Resy." }
+    ]
+  },
+  orderTaking: {
+    intro: "Voice AI is hard to build manually, but you can use Claude to instantly write order summaries, confirmations, and tickets from messy customer messages.",
+    steps: [
+      { action: "When a confused order comes in (text/email/voicemail)", detail: "Paste it into Claude verbatim — typos, run-on sentences and all." },
+      { action: "Ask Claude to clean it up", prompt: "This is an order from a customer at my [pizza shop / sandwich shop / catering business]. Please:\n\n1. Extract the items they want, with quantities and any special requests.\n2. Format as a clean kitchen ticket.\n3. Note anything unclear that I should call them back about.\n4. Draft a confirmation message I can text them.\n\nMy menu is: [paste menu or attach file]." },
+      { action: "Send the kitchen ticket and confirmation", detail: "Saves you from re-reading orders 3 times during the lunch rush." }
+    ]
+  },
+  demandPredict: {
+    intro: "Claude can blend your sales history with weather, events, and holidays to predict next week's covers.",
+    uploads: ["Last year's daily sales/covers as CSV"],
+    steps: [
+      { action: "Pull historical data", detail: "Daily covers or revenue, ideally 12 months. Include the day of week and any notes about events or weather you remember." },
+      { action: "Upload and ask for next week's prediction", prompt: "Attached is my daily covers for the last 12 months. I want a prediction for next week ([dates]).\n\nFactors to consider:\n- Same week last year\n- Day-of-week patterns\n- Season\n- Local events I should mention: [paste any you know]\n- Weather forecast: [paste or describe]\n\nFor each day next week give me: predicted covers (low/expected/high), suggested prep level (light/normal/heavy), and a note on confidence. Recommend staffing tweaks at the end." },
+      { action: "Adjust prep and staffing", detail: "Keep a running log of how the predictions did vs reality. Claude gets better the more context you give it next time." }
+    ]
+  },
+  staffSchedule: {
+    intro: "Claude won't replace 7shifts forever, but it'll build next week's schedule in 10 minutes for free.",
+    uploads: ["Staff availability + your demand forecast (or last week's schedule)"],
+    steps: [
+      { action: "Gather availability and constraints", detail: "Type or paste: each employee's hours of availability, max hours, any blackout dates, any seniority/skill notes." },
+      { action: "Ask Claude to build the schedule", prompt: "Build a weekly schedule for the dates [Mon DD - Sun DD].\n\nMy team:\n- [Name]: max 30 hrs, can't work Sundays, server\n- [Name]: max 40 hrs, opener, kitchen\n- [Name]: max 20 hrs, evenings only, bartender\n[etc.]\n\nDemand levels by day: Mon (low), Tue (low), Wed (medium), Thu (medium), Fri (high), Sat (high), Sun (medium).\n\nShifts I need to cover:\n- [open shift name]: 9am-3pm, requires [skill], every day\n- [shift]: 4pm-10pm, requires [skill], Wed-Sun\n[etc.]\n\nMinimize total labor cost while making sure no shift is short-staffed. Output the schedule as a grid: rows = employees, columns = days. Note any gaps I'll need to fill." },
+      { action: "Review and notify staff", detail: "Send the grid to your team via group text. Free, no software, decent schedule." }
+    ]
+  },
+  docDrafting: {
+    intro: "This is Claude's home turf. The trick is giving it enough context, not just 'write a contract.'",
+    uploads: ["Your firm's template (Word/PDF) — the most important upload"],
+    steps: [
+      { action: "Upload your standard template or a great past example", detail: "Better than describing your style in words. Claude will mimic the structure and tone." },
+      { action: "Give the brief", prompt: "Using the attached template / example as your style guide, please draft a [proposal / engagement letter / memo / contract] for the following situation:\n\nClient: [name and brief background]\nMatter: [what they need from us]\nKey terms: [scope, fee, timeline, anything special]\nDeadline: [when I need it]\n\nMatch the tone and structure of my template exactly. Use placeholder [BRACKETS] for anything you'd guess at, so I can fill them in confidently." },
+      { action: "Edit on real terms only", detail: "Don't change Claude's style — change the substance. Catch nuance, add specifics. 80% of your draft is done." }
+    ]
+  },
+  clientIntake: {
+    intro: "Turn messy intake forms or long client emails into structured summaries you can act on.",
+    uploads: ["The intake form responses or initial client email/transcript"],
+    steps: [
+      { action: "Drop the raw intake into Claude", detail: "Could be an email thread, a Typeform export, or notes you scribbled during a phone call." },
+      { action: "Get a clean summary and action plan", prompt: "Below is my initial communication with a new client.\n\n[paste or attach]\n\nPlease produce:\n\n1. A one-paragraph case/project summary in plain English.\n2. Key facts / data points as a bulleted list.\n3. Open questions I still need to ask the client.\n4. The 3 most likely next steps and rough effort/cost for each.\n5. A draft welcome email confirming what I heard and laying out next steps.\n\nFlag any urgency or risks I should address first." },
+      { action: "Send the welcome email and assign next steps", detail: "Client feels heard, you have a clean record, and your team knows what to do." }
+    ]
+  },
+  research: {
+    intro: "This is the highest-leverage thing Claude does. A 4-hour research task becomes a 20-minute review.",
+    steps: [
+      { action: "State the question precisely", detail: "Vague questions get vague answers. 'Tell me about X' is bad. 'I need to decide whether to do A or B for [specific situation]' is great." },
+      { action: "Ask Claude with a citation requirement", prompt: "I need to research the following: [your specific question].\n\nContext: [your business, location, what you've already tried, what's at stake].\n\nPlease:\n\n1. Give me a clear answer with reasoning.\n2. Provide at least 5 sources I can verify (URLs, paper titles, names of authoritative bodies).\n3. Distinguish well-established facts from your interpretation.\n4. Highlight anything where authoritative sources disagree.\n5. End with the 3 most important things I need to know.\n\nIf web access is enabled, please use it to find current sources." },
+      { action: "Always verify the key claims", detail: "AI is great at sounding confident even when wrong. Click through Claude's sources before betting anything important on them." }
+    ]
+  },
+  invoicing: {
+    intro: "Draft invoices, collection emails, and follow-up sequences. Replace your awkward 'just checking in' note forever.",
+    steps: [
+      { action: "Draft a polite first reminder", prompt: "Draft a friendly reminder email for an invoice that is 7 days past due.\n\nClient: [name]\nInvoice: #[number] for $[amount]\nWork: [brief description]\nOriginal due date: [date]\nOur relationship: [new client / long-term / had a small issue last time]\n\nKeep it warm and assume the best — they probably just forgot. Include the invoice number and a clear way to pay. Keep it under 100 words." },
+      { action: "Draft escalation versions", detail: "Once you have a good first email, ask: 'Now write the 14-day, 30-day, and 'final notice before collections' versions, each a bit firmer than the last. Keep them respectful.' You'll have a complete dunning sequence in minutes." },
+      { action: "Save these as templates", detail: "Paste them into your accounting software's email templates. Reuse forever." }
+    ]
+  },
+  meetingNotes: {
+    intro: "Drop in any transcript or recording (or even rough notes) and get clean, professional meeting minutes in seconds.",
+    uploads: ["Transcript file (TXT, DOCX, or PDF), or audio file if your tool supports it"],
+    steps: [
+      { action: "Get a transcript", detail: "Zoom and Google Meet both have built-in transcription. Or use a free tool like Otter or Whisper. Paste or upload to Claude." },
+      { action: "Ask for the perfect summary", prompt: "Attached is the transcript from a meeting between [participants and roles]. The purpose was [topic / decision needed].\n\nPlease produce:\n\n1. A 3-sentence executive summary at the very top.\n2. Decisions made (bulleted, each with who decided).\n3. Action items as a table: owner | task | due date | notes.\n4. Open questions that weren't resolved.\n5. A draft email to the team with the summary and action items.\n\nBe concise. No filler. Use everyone's actual names from the transcript." },
+      { action: "Send the email and add action items to your task tool", detail: "5 minutes of work, output that looks like a chief of staff did it." }
+    ]
+  },
+  jobScheduling: {
+    intro: "Until you adopt Jobber or Housecall Pro, Claude can take incoming job requests and slot them into a clean schedule.",
+    steps: [
+      { action: "When a request comes in", detail: "Paste the request — text, email, or voicemail transcript — into Claude." },
+      { action: "Get a draft confirmation + scheduling note", prompt: "I'm a [trade — plumber, cleaner, electrician]. A customer just sent the following request:\n\n[paste request]\n\nMy current schedule for the rest of this week:\n[Day]: [list jobs and times]\n[Day]: [list]\n[etc.]\n\nMy service area is [area]. A typical job like this takes [time].\n\nPlease:\n1. Suggest 2-3 specific time slots that fit logically with my route.\n2. Draft a friendly confirmation text offering those slots.\n3. List anything I should ask the customer to confirm (access, parking, etc.)." },
+      { action: "Send the text and add to your calendar", detail: "Customer feels well-handled in a couple of minutes." }
+    ]
+  },
+  quoting: {
+    intro: "The fastest quote wins. Claude with Vision can analyze a customer photo and ballpark a price in under a minute.",
+    uploads: ["Customer photo of the job (e.g., room to be painted, tree to be trimmed, drain to fix)"],
+    steps: [
+      { action: "Forward or upload the customer's photo", detail: "Most customers will text you a photo if you ask. Save it and drop into Claude." },
+      { action: "Ask for a ballpark quote", prompt: "I'm a [painter / landscaper / plumber] in [city]. Attached is a photo a customer sent me.\n\nMy pricing approach: [paste your typical rates and how you estimate, e.g., 'I charge $X per square foot for interior painting, plus materials at cost + 20%'].\n\nPlease:\n1. Describe what you see in the photo.\n2. Estimate the size or scope of the work.\n3. Calculate a rough quote range (low - expected - high) using my pricing.\n4. List anything I should clarify with the customer before quoting firm.\n5. Draft a friendly text I can send with the ballpark." },
+      { action: "Send the ballpark within 5 minutes of the customer's message", detail: "Speed-of-response is the #1 predictor of winning trades work. AI gives you that edge." }
+    ]
+  },
+  routeOptimize: {
+    intro: "Claude won't replace Routific for daily multi-driver dispatch, but for a solo operator with 5-10 stops, it does the job.",
+    steps: [
+      { action: "List today's stops", detail: "Just paste the addresses or business names plus any time windows." },
+      { action: "Ask for the best route", prompt: "I'm a [trade] starting from [home address] at [time]. I have these stops to make today, in any order:\n\n1. [name/address] - [time window if any] - estimated work time [X]\n2. [name/address] - [time window] - [time]\n3. [etc.]\n\nI need to be back home by [time].\n\nPlease:\n1. Suggest the most efficient order, considering geography and time windows.\n2. Estimate drive time between each stop and total daily mileage.\n3. Flag any tight spots where I might run late.\n4. Suggest where I should grab lunch on this route." },
+      { action: "Plug into Google Maps multi-stop", detail: "Use Claude's order to set up a Google Maps multi-stop route. You're good for the day." }
+    ]
+  },
+  leadFollowup: {
+    intro: "The biggest reason small businesses lose deals is slow follow-up. Claude turns 'I should email Sarah back' into 'done in 90 seconds.'",
+    steps: [
+      { action: "Paste the lead's original message + any context", detail: "Include past conversations if any, or the form submission they sent." },
+      { action: "Ask for a strong, personal first reply", prompt: "I'm a [business type]. The following lead just came in:\n\n[paste lead's message or form submission]\n\nPlease draft a reply that:\n- Thanks them by name\n- Confirms exactly what I think they're asking for\n- Asks the 1-2 most important clarifying questions\n- Suggests a specific next step (calendar link, phone call, in-person visit)\n- Sounds warm and human, like I wrote it\n- Is under 120 words\n\nIf they didn't share their phone number, ask for it as part of the next step." },
+      { action: "Build a 4-touch nurture sequence for cold leads", prompt: "For leads who don't reply to my first email, draft a 4-touch follow-up sequence:\n- Day 3: a soft 'just bumping this up'\n- Day 7: share something useful (a tip, case study, FAQ link)\n- Day 14: 'last check-in' with a clear yes/no/not-now question\n- Day 30: a final 'closing the loop' email — friendly, no guilt\n\nKeep each under 100 words. Match the tone of my first email." }
+    ]
+  },
+  reviewMgmt: {
+    intro: "Polite, personalized review responses in 30 seconds — even for the angry ones.",
+    steps: [
+      { action: "Paste the customer's review (good or bad)", detail: "Copy from Google, Yelp, Facebook, etc." },
+      { action: "Ask Claude for a thoughtful reply", prompt: "I run a [business type]. A customer left this review on [Google/Yelp]:\n\n[paste review]\n\nDraft a reply that:\n- Thanks them by name (use their first name from the review)\n- If positive: highlights one specific thing they mentioned, invites them back\n- If negative: takes ownership without being defensive, offers to make it right offline (give them an email or phone), avoids public arguments\n- Stays under 75 words\n- Sounds like a real human owner, not corporate PR\n\nFor a negative review, also tell me what I should investigate or fix internally based on what they said." },
+      { action: "Post the reply within 24 hours", detail: "Future customers read your responses more than the reviews themselves. Composed, fast, human replies build huge trust." }
+    ]
+  },
+  booking: {
+    intro: "While you migrate to a real booking system, Claude can answer booking inquiries and confirm appointments via your text or email.",
+    steps: [
+      { action: "Forward the customer's booking request to Claude", detail: "Just paste it. Email, DM, text, voicemail transcript — anything." },
+      { action: "Get a confirmation reply", prompt: "I run a [salon / personal training / dental practice]. A client wants to book an appointment.\n\nTheir message: [paste]\n\nMy availability this week:\n[Day]: open at [times]\n[Day]: open at [times]\n[etc.]\n\nMy services and durations:\n[Service]: [time], $[price]\n[etc.]\n\nDraft a reply that:\n1. Confirms which service they want (or asks if unclear).\n2. Offers 2-3 specific time options that fit my availability.\n3. Reminds them of cancellation policy.\n4. Asks for any prep info they need to know (arrive 10 min early, intake form, etc.).\n\nKeep it warm and under 100 words." }
+    ]
+  },
+  socialContent: {
+    intro: "An entire month of social posts in one Claude session — captions, hashtags, even visuals you can recreate in Canva.",
+    uploads: ["Optional: a few of your top-performing past posts as voice samples"],
+    steps: [
+      { action: "Set Claude up as your social media manager", prompt: "I run a [business type] in [location]. My audience is [target customer]. My voice on social is [casual / professional / funny / etc.].\n\nIn this conversation, you're my social media manager. Always:\n- Match my voice\n- Suggest 3-5 relevant hashtags per post (not 30)\n- Note the best platform for each post (Instagram / TikTok / Facebook / LinkedIn)\n- Suggest a visual concept I could shoot or design in Canva" },
+      { action: "Request a content calendar", prompt: "Plan a 4-week content calendar with 3 posts per week (12 total). Mix:\n\n- Educational posts (tip, how-to, myth-bust)\n- Behind-the-scenes / personal\n- Customer stories / testimonials\n- Promotional (offer, new service)\n- Engagement (poll, question, share-worthy meme)\n\nFormat as a table: Week | Day | Post Type | Caption | Hashtags | Visual Idea | Best Time to Post." },
+      { action: "Schedule into your tool of choice", detail: "Buffer, Later, or even just your phone's calendar with reminders. The hard part — coming up with stuff to say — is done." }
+    ]
+  },
+  personalOffers: {
+    intro: "Claude can sort your customer list into segments and write a unique offer for each — in one sitting.",
+    uploads: ["Customer list with last visit date and lifetime spend (CSV)"],
+    steps: [
+      { action: "Export your customer data", detail: "From your booking system, POS, or wherever you track clients. Include name, last visit date, lifetime spend, and services they've used." },
+      { action: "Upload and ask for segmentation + offers", prompt: "Attached is my client list. Please:\n\n1. Group clients into 4-5 segments based on behavior (VIP, regular, occasional, lapsed, new).\n2. For each segment, describe who's in it (\"X clients, average spend $Y, last visited Z days ago\").\n3. Recommend a tailored offer for each segment (different offers — VIPs don't need a discount, lapsed clients need a strong reactivation hook).\n4. Draft a short SMS or email for each segment to deliver the offer.\n5. Suggest the best week to send each campaign.\n\nKeep messages under 50 words for SMS, under 100 for email." },
+      { action: "Send via your email/SMS tool", detail: "Even Mailchimp's free tier handles this easily — paste in the segment lists and the messages." }
+    ]
+  },
+  noShowPredict: {
+    intro: "A few minutes with your appointment history and Claude tells you which upcoming bookings are no-show risks.",
+    uploads: ["Past appointments CSV with: client name, date, time, day of week, weather (if known), and outcome (showed/no-show)"],
+    steps: [
+      { action: "Pull last 6 months of appointment outcomes", detail: "Most booking systems let you export this. The key column is 'showed' vs 'no-show' (or 'late-cancel')." },
+      { action: "Ask Claude for a risk model", prompt: "Attached is my appointment history with whether each one was kept or no-show.\n\nPlease:\n\n1. Identify the strongest predictors of no-shows in my data (day of week, time slot, days from booking to appointment, client tenure, weather, etc.).\n2. Give me a simple scoring rubric I can apply to upcoming appointments by hand: e.g., 'add 1 point if booked < 24 hrs ahead, add 2 if it's their first visit, add 1 if it's during lunch hour' etc.\n3. Suggest specific interventions for high-risk appointments (deposit, extra reminder, overbook by 1).\n\nKeep the rubric simple enough that I can score 20 appointments in 5 minutes each Sunday night." },
+      { action: "Run the rubric weekly", detail: "Sunday night, score next week's bookings. Confirm the high-risk ones with extra outreach. Watch your no-show rate drop." }
+    ]
+  },
+  clientRetention: {
+    intro: "A 'we miss you' campaign in 15 minutes with Claude.",
+    uploads: ["Customer list with last visit date"],
+    steps: [
+      { action: "Identify lapsed clients", prompt: "Attached is my client list. Please identify clients who:\n\n- Haven't visited in 60+ days, AND\n- Were previously regular (visited at least 3 times)\n\nList them with name, last visit date, total visits, total spend. Sort by total spend (most valuable first)." },
+      { action: "Draft personal win-back messages", prompt: "For each of the top 20 lapsed clients above, draft a personal SMS that:\n\n- Mentions something specific about their history (last service, last visit timing)\n- Sounds like I noticed they were gone (because I did, ish)\n- Includes a small reactivation incentive (free upgrade, 15% off next visit, complimentary add-on)\n- Stays under 60 words\n- Doesn't sound like a mass blast\n\nMake each one feel unique." },
+      { action: "Send and track replies", detail: "Even a 10% return rate on lapsed clients is a huge revenue lift. Make a note of who came back and what they responded to." }
+    ]
+  },
+  serviceReminders: {
+    intro: "Claude can write a year of personalized service reminders in one sitting that beat any generic 'time for service!' text.",
+    uploads: ["Customer list with last service date and service type"],
+    steps: [
+      { action: "Pull customers due in the next 30 days", prompt: "Attached is my customer list with their last service date.\n\nFor a typical [oil change / AC tune-up / dental cleaning / haircut], my recommended interval is [X months].\n\nPlease list every customer due for service in the next 30 days. For each, include name, contact info, last service date, days since last service, and the service they need." },
+      { action: "Draft a personalized reminder for each", prompt: "Now draft a personal SMS for the top 10 due customers above. Each should:\n\n- Use their first name\n- Reference their specific service and how long it's been\n- Include a soft booking ask with my booking link [paste your link]\n- Be under 50 words\n- Sound friendly, not robotic" },
+      { action: "Send via your texting tool", detail: "Or just from your phone, in batches. Quick wins for recurring revenue." }
+    ]
+  },
+  partsLookup: {
+    intro: "Build a 'shop assistant' Claude conversation that helps techs diagnose issues and find parts in your manuals.",
+    uploads: ["Service manuals (PDF) for the makes/models you commonly work on", "Optional: your past repair logs"],
+    steps: [
+      { action: "Upload the manuals once at the start", detail: "Claude can hold dozens of pages of context. Drop in 5-10 of your most-needed service manuals." },
+      { action: "Set the tech-helper system message", prompt: "You're my shop's diagnostic assistant. The attached manuals are your reference. Rules:\n\n- Only use info from the manuals or what I tell you\n- If the symptom could be multiple things, list them in order of likelihood\n- For each likely cause, list the parts and approximate labor time\n- If you're unsure, say so — never guess on safety-critical stuff\n- Format answers so a tech can read them on a phone in 30 seconds" },
+      { action: "Ask diagnostic questions during jobs", prompt: "Customer brought in a [year/make/model] complaining of [symptom]. Mileage [X]. They mentioned [extra context].\n\nWhat are the top 3 likely causes? For each, what should I check first, and what parts should I have ready?" },
+      { action: "Always verify with your eyes and instruments", detail: "Claude is a great suggestion engine, not a replacement for your training. Diagnose, don't outsource." }
+    ]
+  },
+  listings: {
+    intro: "Photo + key facts → polished MLS listing, social post, and email blurb in 60 seconds.",
+    uploads: ["Property photos (5-10 best ones)", "Key facts: address, beds, baths, sqft, year, lot size, special features, price"],
+    steps: [
+      { action: "Upload photos and paste key facts into Claude", detail: "More photos and more details = better description. Mention features that don't show up in pictures (renovation year, school district, neighborhood vibe)." },
+      { action: "Request multi-channel content", prompt: "Attached are photos of a property I'm listing. The basics:\n\n- Address: [address]\n- Beds: [X], Baths: [Y], Sqft: [Z], Lot: [size]\n- Year built / renovated: [year]\n- Listed at: $[price]\n- Standout features: [list]\n- Neighborhood: [brief description]\n\nPlease produce all of these:\n\n1. MLS description: 200-250 words, factual, fair-housing compliant (no 'family-friendly,' no 'safe neighborhood,' no demographic language).\n2. Headline (under 80 chars).\n3. Instagram caption (engaging, under 150 words, with 5 hashtags).\n4. Facebook post (warmer tone, 100-150 words).\n5. Email blurb to my subscriber list (under 100 words, with a 'view listing' CTA placeholder).\n6. 3 short open house promotional posts." },
+      { action: "Review for fair-housing compliance", detail: "Always read for accuracy and fair-housing language. Then post." }
+    ]
+  },
+  adTargeting: {
+    intro: "Claude won't run your Meta ads for you, but it'll write 20 ad variations and target audiences that beat what most agencies produce.",
+    steps: [
+      { action: "Brief Claude on the campaign", prompt: "I run a [business] in [city]. I'm running a Facebook/Instagram ad campaign with a $[X]/day budget over [Y] weeks.\n\nGoal: [leads / sales / bookings / awareness]\nOffer: [what you're promoting]\nProduct/service price: $[X]\nIdeal customer: [demographics, behaviors, pain points]\nWhat's worked before: [past wins or 'nothing tested yet']" },
+      { action: "Request 5 audiences and 20 ad variations", prompt: "Please produce:\n\n1. Five distinct audience definitions for Meta Ads Manager. For each: a name, exact targeting parameters (interests, behaviors, demographics, exclusions), and why this audience fits the offer.\n\n2. For each audience, 4 ad variations (20 ads total): primary text (90 chars), headline (40 chars), description (30 chars), and a visual concept (what to shoot or design in Canva).\n\n3. Ranking: which 3 ads do you predict will win, and why?" },
+      { action: "Upload the ads and let Meta optimize", detail: "Set up A/B testing in Ads Manager. Meta's AI will pick winners — you give it lots to choose from." }
+    ]
+  },
+  contractReview: {
+    intro: "Drop in any contract — Claude reads it cover to cover and flags risks in plain English. Always have a real lawyer review high-stakes deals.",
+    uploads: ["The contract (PDF or Word)"],
+    steps: [
+      { action: "Upload the contract", detail: "Don't paste — upload the file so Claude reads structure, not just text." },
+      { action: "Run a comprehensive review", prompt: "Attached is a [contract type — listing agreement, NDA, service agreement, lease, etc.] I'm being asked to sign.\n\nPlease:\n\n1. Summarize the agreement in 3 sentences in plain English.\n2. List all parties' main obligations as a table.\n3. Flag any clauses that are unusual, unfavorable to me, or worth a lawyer's eye. Rate each: Critical / Worth Discussing / Minor.\n4. Identify any blank fields, undefined terms, or contradictions.\n5. Compare to standard practice for this contract type — what's normal, what's not?\n6. Suggest 5 specific edits I might propose during negotiation, with sample replacement language.\n\nI'm not a lawyer — explain anything technical in everyday words. End with a recommendation: should I sign as-is, push for changes, or get a lawyer involved?" },
+      { action: "If the contract is high-stakes, get a real lawyer", detail: "Claude is a great first read. Real lawyers are still essential for anything where signing the wrong thing could ruin your year." }
+    ]
+  },
+  virtualStaging: {
+    intro: "True virtual staging needs a specialized tool, but you can use Claude + a generic image AI to mock up room concepts and write staging-style descriptions.",
+    uploads: ["Photos of the empty rooms"],
+    steps: [
+      { action: "Get design direction from Claude first", prompt: "Attached is a photo of an empty [room type] in a [home style — colonial, modern condo, bungalow]. The home is being marketed to [target buyer — young families, downsizers, etc.].\n\nPlease suggest 3 distinct staging concepts:\n\n1. Concept 1 (e.g., 'Modern minimalist'): style, color palette, key furniture pieces, accessory ideas, mood description.\n2. Concept 2 (e.g., 'Warm traditional'): same details.\n3. Concept 3: same.\n\nFor each, write a short paragraph describing what a buyer would feel walking in." },
+      { action: "Use a virtual staging tool to apply the concept", detail: "Take the chosen concept to a tool like Virtual Staging AI. They render the actual photo. Claude designed it; the tool produces it." },
+      { action: "Use the description in your listing", detail: "Even if you don't visually stage, the descriptions help buyers picture themselves there." }
+    ]
+  },
+  lessonPlanning: {
+    intro: "Build a week of personalized lesson plans in 30 minutes — at any level, any subject.",
+    steps: [
+      { action: "Brief Claude with student info and goals", prompt: "I tutor [subject] for a student who is:\n\n- Age / grade: [X]\n- Current level / where they're stuck: [description]\n- Goals: [test prep / catch up / accelerate / love the subject]\n- Learning style: [visual, hands-on, reads well, struggles to focus, etc.]\n- Time available: [X minutes per session, Y sessions per week]\n\nIn this conversation, you're my lesson planner. Match my student. Make it engaging." },
+      { action: "Request a week's plan with materials", prompt: "Build a 5-session lesson plan for next week.\n\nFor each session include:\n- Topic and learning objective\n- Warm-up activity (5 min)\n- Main concept teaching (with examples)\n- Practice problems / activity (with answer key)\n- A short check-for-understanding question\n- Homework (light, builds on what we did)\n\nSession 5 should review and assess weeks 1-5.\n\nMake it leveled — not too easy, not too hard. Use real-world examples relevant to a [age]-year-old." },
+      { action: "Generate worksheets, quizzes, anything else", detail: "Once Claude has the context, you can ask for handouts, slides, vocab lists, anything. It'll match the same level and tone." }
+    ]
+  },
+  studentFeedback: {
+    intro: "Personal, encouraging, useful feedback on every assignment — without burning out.",
+    uploads: ["The student's work (essay, problem set, project)", "Your rubric or grading criteria"],
+    steps: [
+      { action: "Upload the student work and your rubric", detail: "Even a one-paragraph rubric works. Better rubric = better feedback." },
+      { action: "Ask for structured, kind feedback", prompt: "Attached is a [type of assignment] from a [grade/age] student. Also attached is my rubric.\n\nPlease provide feedback in this exact structure:\n\n1. **What's working well** — 2-3 specific strengths (quote the student's own work).\n2. **One thing to focus on next** — pick the single most-important growth area (don't list 5 things — students freeze).\n3. **A specific example** — show them, with a small rewrite of one sentence/problem, what 'better' looks like.\n4. **A question for them to think about** — that pushes their thinking without giving the answer.\n\nTone: warm, specific, like a teacher who cares. No empty phrases like 'nice work.' Always tie comments back to the rubric." },
+      { action: "Add your own personal touch and send", detail: "Edit Claude's draft to add anything you noticed personally. Students can tell when feedback is real — your edits make it real." }
+    ]
+  }
+};
+
+/* ============================================================
    ICON LIBRARY for workflow steps
    ============================================================ */
 const ICONS = {
@@ -1086,10 +1381,10 @@ function go(view, opts = {}) {
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-function goHome()   { go('home', { category: null, useCase: null }); }
-function goCategories() { go('categories', { category: null, useCase: null }); }
-function goCategory(id) { go('category', { category: id, useCase: null }); }
-function goUseCase(uc) { go('useCase', { useCase: uc }); }
+function goHome()   { window.__simTab = 'auto'; go('home', { category: null, useCase: null }); }
+function goCategories() { window.__simTab = 'auto'; go('categories', { category: null, useCase: null }); }
+function goCategory(id) { window.__simTab = 'auto'; go('category', { category: id, useCase: null }); }
+function goUseCase(uc) { window.__simTab = 'auto'; go('useCase', { useCase: uc }); }
 
 /* ============================================================
    RENDER
@@ -1348,28 +1643,8 @@ function renderUseCase(app) {
         </div>
       </header>
 
-      <!-- Workflow Simulation -->
-      <section class="bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl p-5 sm:p-8 shadow-sm">
-        <div class="flex items-start justify-between gap-3 mb-4 sm:mb-6">
-          <div>
-            <h2 class="text-xl sm:text-2xl font-bold mb-1">How it works — Step by step</h2>
-            <p class="text-sm text-ink-600 dark:text-ink-300">A simulation of the workflow from start to finish.</p>
-          </div>
-          <button onclick='openModal("About this workflow", "<p>This diagram shows the flow of work when AI handles this task. Each step is autonomous — meaning the AI does it without your input — except where you see a check mark, which means you review or approve.</p><p class=\\"mt-3\\">Real implementations may vary slightly based on the tool you pick, but the core sequence is the same.</p>")'
-            class="shrink-0 p-2 rounded-lg hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="About this workflow">
-            <svg class="w-5 h-5 text-ink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4M12 16h.01"/></svg>
-          </button>
-        </div>
-
-        <!-- Desktop horizontal flow -->
-        <div class="hidden md:block overflow-x-auto pb-2">
-          ${renderWorkflowSvg(u.workflow)}
-        </div>
-        <!-- Mobile vertical flow -->
-        <div class="md:hidden">
-          ${renderWorkflowVertical(u.workflow)}
-        </div>
-      </section>
+      <!-- Simulation (with tabs: Automated workflow OR Manual with Claude) -->
+      ${renderSimulationSection(u, MANUAL_STEPS[state.useCase])}
 
       <!-- Two Paths -->
       <section>
@@ -1518,6 +1793,248 @@ function getToolExplainer(name) {
 /* ============================================================
    SVG WORKFLOW RENDERING
    ============================================================ */
+/* ============================================================
+   SIMULATION SECTION — tabs: Automated workflow + Manual with Claude
+   ============================================================ */
+// Window-level UI state for the prompt size and tab. Reset when entering a use case.
+window.__simTab = 'auto';            // 'auto' | 'manual'
+window.__promptSize = 'lg';          // 'md' | 'lg' | 'xl' | '2xl' | 'projector'
+
+function renderSimulationSection(u, manual) {
+  const hasManual = !!manual;
+  // If user previously was on 'manual' but this UC has none, fall back
+  if (!hasManual) window.__simTab = 'auto';
+
+  return `
+    <section class="bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl p-5 sm:p-8 shadow-sm">
+      <div class="flex items-start justify-between gap-3 mb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-bold mb-1">How it works — Step by step</h2>
+          <p class="text-sm text-ink-600 dark:text-ink-300">A simulation of the workflow from start to finish.</p>
+        </div>
+        <button onclick='openModal("About this section", getSimAboutHtml())'
+          class="shrink-0 p-2 rounded-lg hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="About this section">
+          <svg class="w-5 h-5 text-ink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4M12 16h.01"/></svg>
+        </button>
+      </div>
+
+      ${hasManual ? `
+        <!-- Tab switcher -->
+        <div role="tablist" class="inline-flex p-1 mb-5 rounded-lg bg-ink-100 dark:bg-ink-800 gap-1 flex-wrap">
+          <button role="tab" aria-selected="${window.__simTab === 'auto'}" onclick="setSimTab('auto')"
+            class="px-3 sm:px-4 py-2 rounded-md text-sm font-semibold transition-colors flex items-center gap-1.5 ${window.__simTab === 'auto'
+              ? 'bg-white dark:bg-ink-900 text-brand-700 dark:text-brand-300 shadow-sm'
+              : 'text-ink-600 dark:text-ink-300 hover:text-ink-900 dark:hover:text-ink-100'}">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Automated workflow</span>
+          </button>
+          <button role="tab" aria-selected="${window.__simTab === 'manual'}" onclick="setSimTab('manual')"
+            class="px-3 sm:px-4 py-2 rounded-md text-sm font-semibold transition-colors flex items-center gap-1.5 ${window.__simTab === 'manual'
+              ? 'bg-white dark:bg-ink-900 text-brand-700 dark:text-brand-300 shadow-sm'
+              : 'text-ink-600 dark:text-ink-300 hover:text-ink-900 dark:hover:text-ink-100'}">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/></svg>
+            <span>Do it manually with Claude</span>
+          </button>
+        </div>
+      ` : ''}
+
+      ${window.__simTab === 'manual' && hasManual
+        ? renderManualMode(manual)
+        : `
+          <!-- Desktop horizontal flow -->
+          <div class="hidden md:block overflow-x-auto pb-2">${renderWorkflowSvg(u.workflow)}</div>
+          <!-- Mobile vertical flow -->
+          <div class="md:hidden">${renderWorkflowVertical(u.workflow)}</div>
+        `}
+    </section>
+  `;
+}
+
+function getSimAboutHtml() {
+  return `
+    <p>This section has two views:</p>
+    <ul class="list-disc pl-5 mt-2 space-y-2">
+      <li><strong>Automated workflow</strong> — the diagram shows what happens once you've set up a tool to handle this task automatically. Steps run without your involvement except where you approve.</li>
+      <li><strong>Do it manually with Claude</strong> — step-by-step instructions for doing the same job by hand using Claude.ai. Includes ready-to-copy prompts. Great for learning, demos, or just getting work done before you commit to a tool.</li>
+    </ul>
+    <p class="mt-3">For demos, click <strong>Projector</strong> in the prompt size selector to make prompts fill the screen.</p>
+  `;
+}
+
+function setSimTab(tab) {
+  window.__simTab = tab;
+  render();
+  // Scroll the simulation back into view
+  setTimeout(() => {
+    const target = document.querySelector('section h2');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 50);
+}
+
+function setPromptSize(size) {
+  window.__promptSize = size;
+  render();
+}
+
+function copyPrompt(btnId, encodedText) {
+  try {
+    const text = decodeURIComponent(encodedText);
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById(btnId);
+      if (btn) {
+        const orig = btn.innerHTML;
+        btn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Copied!`;
+        btn.classList.add('!bg-teal-600', '!text-white');
+        setTimeout(() => {
+          btn.innerHTML = orig;
+          btn.classList.remove('!bg-teal-600', '!text-white');
+        }, 1800);
+      }
+    }).catch(() => fallbackCopy(text));
+  } catch (e) { /* noop */ }
+}
+
+function fallbackCopy(text) {
+  const t = document.createElement('textarea');
+  t.value = text;
+  document.body.appendChild(t);
+  t.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(t);
+}
+
+function renderManualMode(manual) {
+  // Map size keys to Tailwind classes
+  const sizeClasses = {
+    md:        'text-sm sm:text-base leading-relaxed',
+    lg:        'text-base sm:text-lg leading-relaxed',
+    xl:        'text-lg sm:text-xl leading-relaxed',
+    '2xl':     'text-xl sm:text-2xl leading-relaxed',
+    projector: 'text-2xl sm:text-3xl md:text-4xl leading-relaxed font-medium'
+  };
+  const sizeClass = sizeClasses[window.__promptSize] || sizeClasses.lg;
+  const sizes = [
+    { key: 'md',        label: 'A',   title: 'Normal' },
+    { key: 'lg',        label: 'A',   title: 'Comfortable' },
+    { key: 'xl',        label: 'A',   title: 'Large' },
+    { key: '2xl',       label: 'A',   title: 'Extra large' },
+    { key: 'projector', label: 'A',   title: 'Projector mode' }
+  ];
+  const sizePx = { md: 13, lg: 15, xl: 18, '2xl': 22, projector: 28 };
+
+  return `
+    <div class="fade-in">
+      <!-- Intro -->
+      <div class="bg-brand-50 dark:bg-brand-950 border border-brand-200 dark:border-brand-800 rounded-xl p-4 sm:p-5 mb-5">
+        <div class="flex items-start gap-3">
+          <div class="shrink-0 w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="flex-1">
+            <p class="font-semibold mb-1">No setup required — just you and Claude.ai</p>
+            <p class="text-sm text-ink-700 dark:text-ink-200">${manual.intro}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Files to upload -->
+      ${manual.uploads && manual.uploads.length ? `
+        <div class="mb-5 p-4 sm:p-5 rounded-xl border-2 border-dashed border-accent-500 dark:border-accent-700 bg-accent-50/50 dark:bg-accent-950/30">
+          <div class="flex items-center gap-2 mb-2">
+            <svg class="w-5 h-5 text-accent-700 dark:text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+            <h4 class="font-bold">What to have ready (upload to Claude)</h4>
+          </div>
+          <ul class="space-y-1.5 ml-7">
+            ${manual.uploads.map(f => `
+              <li class="text-sm text-ink-700 dark:text-ink-200 list-disc">${f}</li>
+            `).join('')}
+          </ul>
+          <p class="text-xs text-ink-500 dark:text-ink-400 mt-3 ml-7">
+            Tip: in Claude, click the <span class="font-semibold">+</span> or paperclip icon in the chat box to attach files. PDFs, Word, Excel, CSVs, and most images are all supported.
+          </p>
+        </div>
+      ` : ''}
+
+      <!-- Font size controls (only show if there are prompts) -->
+      ${manual.steps.some(s => s.prompt) ? `
+        <div class="flex flex-wrap items-center gap-2 mb-5 p-3 rounded-lg bg-ink-100 dark:bg-ink-800/60">
+          <span class="text-xs font-semibold text-ink-600 dark:text-ink-300 mr-1">Prompt text size:</span>
+          ${sizes.map(s => `
+            <button onclick="setPromptSize('${s.key}')" title="${s.title}"
+              class="px-3 py-1.5 rounded-md text-xs font-bold transition-colors ${window.__promptSize === s.key
+                ? 'bg-brand-600 text-white shadow-sm'
+                : 'bg-white dark:bg-ink-900 text-ink-700 dark:text-ink-200 hover:bg-brand-100 dark:hover:bg-brand-950 border border-ink-200 dark:border-ink-700'}"
+              aria-pressed="${window.__promptSize === s.key}">
+              <span style="font-size: ${sizePx[s.key]}px; line-height: 1;">${s.label}</span>
+              <span class="ml-1 hidden sm:inline">${s.title}</span>
+            </button>
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <!-- Steps -->
+      <ol class="space-y-5">
+        ${manual.steps.map((step, i) => renderManualStep(step, i, sizeClass)).join('')}
+      </ol>
+
+      <!-- Footer note -->
+      <div class="mt-6 pt-5 border-t border-ink-200 dark:border-ink-800">
+        <p class="text-sm text-ink-600 dark:text-ink-300 flex items-start gap-2">
+          <svg class="w-5 h-5 shrink-0 text-brand-600 dark:text-brand-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/></svg>
+          <span>These prompts also work great with ChatGPT, Gemini, or any other capable AI assistant. Visit
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-700 dark:text-brand-400 hover:underline">claude.ai</a>
+            to get started — there's a free tier.</span>
+        </p>
+      </div>
+    </div>
+  `;
+}
+
+function renderManualStep(step, idx, sizeClass) {
+  const stepNum = idx + 1;
+  const promptId = `prompt-${idx}`;
+  const btnId = `copy-btn-${idx}`;
+  const encoded = step.prompt ? encodeURIComponent(step.prompt).replace(/'/g, '%27') : '';
+
+  return `
+    <li class="flex gap-3 sm:gap-4">
+      <div class="shrink-0 flex flex-col items-center">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-brand-600 to-teal-600 text-white flex items-center justify-center font-bold shadow-md">
+          ${stepNum}
+        </div>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h4 class="font-bold text-base sm:text-lg mb-1.5">${step.action}</h4>
+        ${step.detail ? `<p class="text-sm sm:text-base text-ink-700 dark:text-ink-200 mb-3">${step.detail}</p>` : ''}
+        ${step.prompt ? `
+          <div class="rounded-xl border-2 border-brand-300 dark:border-brand-700 bg-gradient-to-br from-brand-50 to-teal-50 dark:from-ink-800 dark:to-ink-800/50 overflow-hidden shadow-sm">
+            <div class="flex items-center justify-between gap-2 px-3 sm:px-4 py-2 bg-brand-100/80 dark:bg-ink-700/60 border-b border-brand-200 dark:border-ink-700">
+              <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-brand-800 dark:text-brand-300 uppercase tracking-wide">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>
+                Prompt to use
+              </div>
+              <button id="${btnId}" onclick="copyPrompt('${btnId}', '${encoded}')"
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white dark:bg-ink-900 border border-brand-300 dark:border-ink-600 hover:bg-brand-50 dark:hover:bg-ink-700 text-xs sm:text-sm font-semibold transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <pre id="${promptId}" class="${sizeClass} px-4 sm:px-5 py-4 sm:py-5 whitespace-pre-wrap font-sans text-ink-900 dark:text-ink-100 m-0">${escapeHtml(step.prompt)}</pre>
+          </div>
+        ` : ''}
+      </div>
+    </li>
+  `;
+}
+
+function escapeHtml(s) {
+  return String(s)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;');
+}
+
+
 function renderWorkflowSvg(steps) {
   const stepWidth = 160;
   const stepHeight = 100;
