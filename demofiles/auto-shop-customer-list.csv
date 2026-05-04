@@ -1,0 +1,101 @@
+customer_id,first_name,last_name,phone,email,vehicle_year,vehicle_make,vehicle_model,vehicle_mileage,last_service_type,last_service_date,service_interval_months,next_due_date,lifetime_spend
+AC2001,Mike,Collins,555-424-1480,mike.collins@example.com,2022,Ford,F-150,21458,Coolant Flush,2024-07-25,30,2027-01-11,7890.44
+AC2002,Matthew,Rogers,555-437-8910,matthew.rogers@example.com,2015,Chevrolet,Equinox,116589,Alignment,2023-08-08,12,2024-08-02,4889.06
+AC2003,Michael,Stewart,555-647-9730,michael.stewart@example.com,2016,Toyota,RAV4,39330,Coolant Flush,2024-10-26,30,2027-04-14,4003.28
+AC2004,Patricia,Hill,555-892-1714,patricia.hill@example.com,2022,Chevrolet,Equinox,109649,Battery Check,2024-07-05,6,2025-01-01,485.12
+AC2005,Eric,Adams,555-457-8586,eric.adams@example.com,2018,Chevrolet,Silverado,143784,Brake Inspection,2024-09-05,12,2025-08-31,8438.97
+AC2006,Patricia,Nelson,555-204-3456,patricia.nelson@example.com,2014,Lexus,RX 350,47372,Brake Inspection,2024-10-30,12,2025-10-25,3186.16
+AC2007,Mike,Wright,555-381-3800,mike.wright@example.com,2022,Lexus,RX 350,144343,Battery Check,2025-04-19,6,2025-10-16,5051.55
+AC2008,Mike,Phillips,555-332-4097,mike.phillips@example.com,2023,BMW,X3,57480,Coolant Flush,2021-11-12,30,2024-04-30,3735.00
+AC2009,Michael,Peterson,555-901-9167,michael.peterson@example.com,2022,Honda,Civic,18575,Oil Change,2025-01-17,4,2025-05-17,5593.46
+AC2010,Mike,Green,555-365-8392,mike.green@example.com,2016,Chevrolet,Silverado,51409,Battery Check,2024-12-07,6,2025-06-05,3376.01
+AC2011,Daniel,Cooper,555-900-2507,daniel.cooper@example.com,2018,Lexus,RX 350,144713,Oil Change,2025-02-09,4,2025-06-09,6944.41
+AC2012,Rebecca,Carter,555-361-1814,rebecca.carter@example.com,2020,Chevrolet,Equinox,145033,Coolant Flush,2024-05-11,30,2026-10-28,6248.91
+AC2013,Brandon,Ward,555-324-5167,brandon.ward@example.com,2017,Mazda,CX-5,112695,Coolant Flush,2023-09-29,30,2026-03-17,3108.97
+AC2014,David,Carter,555-782-5385,david.carter@example.com,2020,Hyundai,Sonata,67068,Battery Check,2024-10-27,6,2025-04-25,4528.75
+AC2015,Mark,Mitchell,555-975-7823,mark.mitchell@example.com,2017,Jeep,Wrangler,56948,Coolant Flush,2023-07-01,30,2025-12-17,7148.61
+AC2016,Michael,Campbell,555-584-6978,michael.campbell@example.com,2018,Hyundai,Sonata,135775,Coolant Flush,2023-03-20,30,2025-09-05,4672.43
+AC2017,Mike,Foster,555-889-4578,mike.foster@example.com,2023,Jeep,Grand Cherokee,122089,Transmission Fluid,2022-10-12,30,2025-03-30,5737.94
+AC2018,Patricia,Carter,555-464-1389,patricia.carter@example.com,2017,Chevrolet,Equinox,23303,Battery Check,2025-03-11,6,2025-09-07,6593.43
+AC2019,Mark,Mitchell,555-644-5409,mark.mitchell@example.com,2014,Nissan,Altima,60840,Coolant Flush,2025-04-07,30,2027-09-24,3677.19
+AC2020,Lisa,Reed,555-680-1748,lisa.reed@example.com,2014,Toyota,Camry,66419,Alignment,2024-01-10,12,2025-01-04,6060.39
+AC2021,Amanda,Nelson,555-347-1468,amanda.nelson@example.com,2016,Mazda,CX-5,16254,Coolant Flush,2022-12-29,30,2025-06-16,960.66
+AC2022,Jennifer,Roberts,555-407-6627,jennifer.roberts@example.com,2019,Jeep,Wrangler,16275,Tire Rotation,2024-11-20,6,2025-05-19,636.44
+AC2023,Lisa,Collins,555-575-5338,lisa.collins@example.com,2018,Honda,Civic,51508,Air Filter,2024-06-20,12,2025-06-15,6662.82
+AC2024,Steven,Cook,555-292-2288,steven.cook@example.com,2017,BMW,X3,101667,Air Filter,2024-08-14,12,2025-08-09,6869.77
+AC2025,Anthony,Ward,555-381-3733,anthony.ward@example.com,2015,Honda,Civic,22652,Brake Inspection,2024-05-14,12,2025-05-09,3678.90
+AC2026,Lisa,Ward,555-287-6635,lisa.ward@example.com,2018,Subaru,Outback,114694,Brake Inspection,2024-07-17,12,2025-07-12,1343.63
+AC2027,John,Edwards,555-456-5793,john.edwards@example.com,2021,Nissan,Rogue,106775,Air Filter,2024-08-23,12,2025-08-18,3204.88
+AC2028,David,Carter,555-698-4803,david.carter@example.com,2020,Lexus,RX 350,36186,Oil Change,2025-01-20,4,2025-05-20,3059.64
+AC2029,David,Evans,555-805-8434,david.evans@example.com,2018,BMW,X3,72650,Coolant Flush,2024-11-14,30,2027-05-03,6073.23
+AC2030,Matthew,Bailey,555-525-8465,matthew.bailey@example.com,2016,Hyundai,Elantra,43220,Alignment,2023-07-22,12,2024-07-16,2058.36
+AC2031,Amanda,Carter,555-950-8792,amanda.carter@example.com,2015,Hyundai,Sonata,98220,Brake Inspection,2024-11-04,12,2025-10-30,3465.14
+AC2032,Kevin,Reed,555-129-9416,kevin.reed@example.com,2020,Honda,CR-V,126231,Transmission Fluid,2025-01-25,30,2027-07-14,2523.19
+AC2033,Robert,Edwards,555-534-4834,robert.edwards@example.com,2021,Lexus,RX 350,30521,Battery Check,2024-07-13,6,2025-01-09,1124.88
+AC2034,Heather,Campbell,555-175-8140,heather.campbell@example.com,2014,Ford,Explorer,103087,Air Filter,2024-11-21,12,2025-11-16,6445.09
+AC2035,John,Mitchell,555-940-3048,john.mitchell@example.com,2014,Nissan,Altima,52444,Coolant Flush,2023-04-09,30,2025-09-25,7810.76
+AC2036,Nicole,Reed,555-878-4527,nicole.reed@example.com,2021,Hyundai,Elantra,60414,Air Filter,2024-10-20,12,2025-10-15,2707.20
+AC2037,Sarah,Peterson,555-773-5780,sarah.peterson@example.com,2022,Jeep,Grand Cherokee,38711,Oil Change,2025-01-07,4,2025-05-07,5684.21
+AC2038,John,Green,555-979-3371,john.green@example.com,2023,Nissan,Rogue,27110,Air Filter,2024-05-13,12,2025-05-08,4901.47
+AC2039,Mark,Reed,555-885-7079,mark.reed@example.com,2015,Ford,Explorer,109846,Air Filter,2024-04-29,12,2025-04-24,4004.59
+AC2040,Amanda,Adams,555-704-1397,amanda.adams@example.com,2023,Volkswagen,Jetta,91756,Tire Rotation,2024-08-15,6,2025-02-11,6475.32
+AC2041,Patricia,Carter,555-729-7103,patricia.carter@example.com,2015,Ford,F-150,129262,Air Filter,2024-10-01,12,2025-09-26,2261.44
+AC2042,Mark,Wright,555-116-7684,mark.wright@example.com,2016,Toyota,Corolla,99067,Alignment,2024-06-15,12,2025-06-10,1633.97
+AC2043,Rachel,Hill,555-562-4500,rachel.hill@example.com,2021,BMW,X3,31837,Brake Inspection,2024-05-16,12,2025-05-11,7350.73
+AC2044,Stephanie,Hill,555-939-3549,stephanie.hill@example.com,2016,Hyundai,Elantra,74922,Tire Rotation,2024-11-29,6,2025-05-28,1711.68
+AC2045,Rachel,Collins,555-795-8544,rachel.collins@example.com,2020,Ford,Explorer,72103,Tire Rotation,2024-12-05,6,2025-06-03,3952.95
+AC2046,Daniel,Hill,555-599-1016,daniel.hill@example.com,2019,Toyota,Camry,133284,Brake Inspection,2024-08-06,12,2025-08-01,4008.67
+AC2047,Andrew,Turner,555-360-5491,andrew.turner@example.com,2023,Volkswagen,Jetta,29805,Tire Rotation,2024-11-16,6,2025-05-15,3008.26
+AC2048,Mike,Cooper,555-673-9099,mike.cooper@example.com,2014,Honda,CR-V,78972,Brake Inspection,2024-09-14,12,2025-09-09,4917.36
+AC2049,John,Ward,555-615-7549,john.ward@example.com,2018,Ford,F-150,97892,Coolant Flush,2025-01-26,30,2027-07-15,4093.34
+AC2050,Brian,Thompson,555-517-8524,brian.thompson@example.com,2014,Ford,Explorer,86602,Transmission Fluid,2021-10-18,30,2024-04-05,5919.33
+AC2051,Andrew,Murphy,555-198-1731,andrew.murphy@example.com,2022,Toyota,RAV4,147379,Brake Inspection,2024-05-05,12,2025-04-30,1057.91
+AC2052,Sarah,Peterson,555-202-4992,sarah.peterson@example.com,2016,Jeep,Wrangler,97201,Alignment,2024-02-11,12,2025-02-05,2418.77
+AC2053,Brian,Thompson,555-340-9772,brian.thompson@example.com,2022,Honda,Civic,40831,Transmission Fluid,2022-05-14,30,2024-10-30,5743.15
+AC2054,Lisa,Turner,555-870-7336,lisa.turner@example.com,2016,Ford,Explorer,35131,Oil Change,2025-02-17,4,2025-06-17,4659.92
+AC2055,Anthony,Bailey,555-650-2408,anthony.bailey@example.com,2020,Lexus,RX 350,77274,Air Filter,2024-06-27,12,2025-06-22,5670.53
+AC2056,Nicole,Evans,555-763-8964,nicole.evans@example.com,2020,Ford,Explorer,95283,Oil Change,2025-01-02,4,2025-05-02,3898.71
+AC2057,Lisa,Thompson,555-899-1825,lisa.thompson@example.com,2014,Toyota,Corolla,41141,Coolant Flush,2021-08-26,30,2024-02-12,8230.51
+AC2058,Matthew,Anderson,555-992-1451,matthew.anderson@example.com,2015,Subaru,Outback,110730,Battery Check,2024-10-24,6,2025-04-22,6845.37
+AC2059,Steven,Collins,555-641-7083,steven.collins@example.com,2019,Volkswagen,Jetta,16682,Tire Rotation,2024-07-30,6,2025-01-26,1101.46
+AC2060,Robert,Ward,555-365-6953,robert.ward@example.com,2015,Ram,1500,109845,Transmission Fluid,2023-09-03,30,2026-02-19,3833.54
+AC2061,Daniel,Green,555-564-8008,daniel.green@example.com,2020,Volkswagen,Jetta,63775,Coolant Flush,2023-02-26,30,2025-08-14,4463.06
+AC2062,Sarah,Parker,555-698-6806,sarah.parker@example.com,2015,Subaru,Outback,78050,Battery Check,2024-12-07,6,2025-06-05,3676.38
+AC2063,Jennifer,Reed,555-481-6954,jennifer.reed@example.com,2020,Hyundai,Sonata,21621,Alignment,2024-07-04,12,2025-06-29,4430.07
+AC2064,Amanda,Hill,555-269-3290,amanda.hill@example.com,2022,Ford,F-150,27199,Alignment,2024-07-19,12,2025-07-14,2200.19
+AC2065,Patricia,Foster,555-280-9097,patricia.foster@example.com,2020,Chevrolet,Equinox,114945,Tire Rotation,2024-11-03,6,2025-05-02,3865.32
+AC2066,Anthony,Baker,555-897-2585,anthony.baker@example.com,2018,Toyota,Camry,124077,Tire Rotation,2024-07-30,6,2025-01-26,5957.79
+AC2067,Lisa,Murphy,555-215-7500,lisa.murphy@example.com,2015,BMW,X3,74444,Coolant Flush,2020-12-09,30,2023-05-28,8422.32
+AC2068,Anthony,Campbell,555-420-7178,anthony.campbell@example.com,2020,Ford,F-150,116790,Transmission Fluid,2023-01-22,30,2025-07-10,4786.12
+AC2069,Rachel,Phillips,555-664-4790,rachel.phillips@example.com,2022,Ram,1500,113934,Alignment,2025-02-27,12,2026-02-22,474.07
+AC2070,Chris,Collins,555-883-6644,chris.collins@example.com,2021,Ford,Explorer,35645,Air Filter,2024-05-30,12,2025-05-25,5092.06
+AC2071,Lisa,Reed,555-159-7280,lisa.reed@example.com,2023,Honda,Accord,141498,Tire Rotation,2025-01-09,6,2025-07-08,3105.14
+AC2072,Sarah,Carter,555-183-9900,sarah.carter@example.com,2014,Toyota,RAV4,39690,Transmission Fluid,2021-12-19,30,2024-06-06,4085.88
+AC2073,Jennifer,Edwards,555-189-9789,jennifer.edwards@example.com,2018,Honda,CR-V,20353,Alignment,2024-01-05,12,2024-12-30,1369.41
+AC2074,Nicole,Stewart,555-952-8816,nicole.stewart@example.com,2014,Hyundai,Sonata,81071,Alignment,2024-05-02,12,2025-04-27,7649.84
+AC2075,Rachel,Morris,555-602-3035,rachel.morris@example.com,2023,Subaru,Outback,42906,Oil Change,2025-01-14,4,2025-05-14,1338.55
+AC2076,Brandon,Howard,555-109-8088,brandon.howard@example.com,2019,Hyundai,Elantra,41740,Battery Check,2024-11-22,6,2025-05-21,1069.60
+AC2077,Michael,Murphy,555-304-2542,michael.murphy@example.com,2019,BMW,X3,121937,Battery Check,2025-04-11,6,2025-10-08,1803.71
+AC2078,Amanda,Turner,555-205-7857,amanda.turner@example.com,2021,Nissan,Rogue,123637,Brake Inspection,2024-07-28,12,2025-07-23,5253.30
+AC2079,Eric,Campbell,555-638-1877,eric.campbell@example.com,2021,Ford,F-150,70380,Tire Rotation,2024-06-11,6,2024-12-08,3605.31
+AC2080,Lisa,Rogers,555-178-7979,lisa.rogers@example.com,2015,Toyota,Corolla,145964,Air Filter,2024-10-31,12,2025-10-26,8428.42
+AC2081,Ashley,Baker,555-223-4966,ashley.baker@example.com,2016,BMW,X3,125517,Tire Rotation,2024-11-16,6,2025-05-15,1068.90
+AC2082,Eric,Howard,555-805-1922,eric.howard@example.com,2019,Jeep,Grand Cherokee,96388,Transmission Fluid,2024-01-13,30,2026-07-01,2403.51
+AC2083,Steven,Adams,555-330-6599,steven.adams@example.com,2019,Volkswagen,Jetta,146995,Transmission Fluid,2023-01-01,30,2025-06-19,6043.50
+AC2084,Laura,Peterson,555-850-4568,laura.peterson@example.com,2023,Ford,Explorer,87994,Tire Rotation,2024-06-10,6,2024-12-07,5310.24
+AC2085,Jennifer,Green,555-953-4018,jennifer.green@example.com,2019,Nissan,Altima,33281,Tire Rotation,2024-11-11,6,2025-05-10,3047.50
+AC2086,Laura,Ward,555-938-3985,laura.ward@example.com,2018,Toyota,RAV4,42864,Alignment,2025-03-09,12,2026-03-04,6138.68
+AC2087,Brian,Cooper,555-364-2600,brian.cooper@example.com,2015,Toyota,Corolla,108849,Battery Check,2024-11-12,6,2025-05-11,7089.76
+AC2088,Anthony,Bailey,555-322-1863,anthony.bailey@example.com,2018,Jeep,Wrangler,117134,Coolant Flush,2023-01-06,30,2025-06-24,5305.02
+AC2089,Mike,Ward,555-766-8022,mike.ward@example.com,2023,Mazda,CX-5,27095,Battery Check,2024-12-18,6,2025-06-16,6050.90
+AC2090,Andrew,Turner,555-675-3880,andrew.turner@example.com,2022,Ram,1500,23417,Alignment,2023-12-14,12,2024-12-08,6106.08
+AC2091,Amanda,Evans,555-510-9326,amanda.evans@example.com,2017,Lexus,RX 350,124716,Coolant Flush,2023-12-20,30,2026-06-07,968.19
+AC2092,Laura,Baker,555-129-8835,laura.baker@example.com,2023,Ford,F-150,133704,Alignment,2023-11-06,12,2024-10-31,6023.91
+AC2093,Robert,Evans,555-412-3172,robert.evans@example.com,2017,BMW,X3,62253,Transmission Fluid,2024-04-27,30,2026-10-14,5686.17
+AC2094,Patricia,Adams,555-789-5024,patricia.adams@example.com,2015,Chevrolet,Silverado,122949,Air Filter,2025-04-08,12,2026-04-03,1937.86
+AC2095,Sarah,Campbell,555-764-6079,sarah.campbell@example.com,2018,Nissan,Altima,41182,Oil Change,2024-09-29,4,2025-01-27,2786.02
+AC2096,Lisa,Mitchell,555-261-5579,lisa.mitchell@example.com,2018,Jeep,Wrangler,23078,Brake Inspection,2024-08-08,12,2025-08-03,2419.44
+AC2097,Heather,Bailey,555-220-9433,heather.bailey@example.com,2014,Nissan,Rogue,38818,Transmission Fluid,2022-12-28,30,2025-06-15,3877.66
+AC2098,David,Roberts,555-205-6061,david.roberts@example.com,2018,Hyundai,Elantra,89712,Oil Change,2025-01-24,4,2025-05-24,4434.69
+AC2099,Michael,Morris,555-427-6096,michael.morris@example.com,2023,Jeep,Wrangler,25205,Tire Rotation,2025-02-23,6,2025-08-22,7138.09
+AC2100,Jennifer,Mitchell,555-980-2246,jennifer.mitchell@example.com,2015,Nissan,Altima,116067,Oil Change,2025-02-18,4,2025-06-18,5822.55

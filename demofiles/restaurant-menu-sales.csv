@@ -1,0 +1,743 @@
+date,day_of_week,item,category,qty_sold,unit_price,food_cost_per_unit,revenue,food_cost_total
+2025-04-01,Tuesday,Caesar Salad,Appetizer,12,12.00,2.80,144.00,33.60
+2025-04-01,Tuesday,Burrata & Tomato,Appetizer,3,16.00,5.20,48.00,15.60
+2025-04-01,Tuesday,Calamari Fritti,Appetizer,6,14.00,4.10,84.00,24.60
+2025-04-01,Tuesday,Mushroom Bruschetta,Appetizer,2,11.00,2.20,22.00,4.40
+2025-04-01,Tuesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-01,Tuesday,Margherita Pizza,Entree,28,18.00,3.60,504.00,100.80
+2025-04-01,Tuesday,Pepperoni Pizza,Entree,12,20.00,4.40,240.00,52.80
+2025-04-01,Tuesday,Truffle Pizza,Entree,5,28.00,8.20,140.00,41.00
+2025-04-01,Tuesday,Cacio e Pepe,Entree,23,22.00,3.80,506.00,87.40
+2025-04-01,Tuesday,Spaghetti Carbonara,Entree,11,24.00,5.10,264.00,56.10
+2025-04-01,Tuesday,Lasagna Bolognese,Entree,7,26.00,6.30,182.00,44.10
+2025-04-01,Tuesday,Mushroom Risotto,Entree,9,25.00,5.40,225.00,48.60
+2025-04-01,Tuesday,Branzino,Entree,7,38.00,14.20,266.00,99.40
+2025-04-01,Tuesday,Osso Buco,Entree,4,42.00,16.80,168.00,67.20
+2025-04-01,Tuesday,Veal Parmesan,Entree,8,32.00,9.20,256.00,73.60
+2025-04-01,Tuesday,Eggplant Parmesan,Entree,6,22.00,4.40,132.00,26.40
+2025-04-01,Tuesday,Caprese Sandwich,Lunch,1,14.00,3.20,14.00,3.20
+2025-04-01,Tuesday,Tiramisu,Dessert,10,9.00,1.80,90.00,18.00
+2025-04-01,Tuesday,Cannoli (2pc),Dessert,4,8.00,1.60,32.00,6.40
+2025-04-01,Tuesday,Panna Cotta,Dessert,4,8.50,1.40,34.00,5.60
+2025-04-01,Tuesday,Gelato,Dessert,11,7.00,1.30,77.00,14.30
+2025-04-01,Tuesday,House Wine - Glass,Beverage,40,11.00,1.80,440.00,72.00
+2025-04-01,Tuesday,Espresso,Beverage,5,3.50,0.40,17.50,2.00
+2025-04-01,Tuesday,Cappuccino,Beverage,13,4.50,0.55,58.50,7.15
+2025-04-01,Tuesday,San Pellegrino,Beverage,5,5.00,0.80,25.00,4.00
+2025-04-02,Wednesday,Caesar Salad,Appetizer,19,12.00,2.80,228.00,53.20
+2025-04-02,Wednesday,Burrata & Tomato,Appetizer,10,16.00,5.20,160.00,52.00
+2025-04-02,Wednesday,Calamari Fritti,Appetizer,9,14.00,4.10,126.00,36.90
+2025-04-02,Wednesday,Mushroom Bruschetta,Appetizer,2,11.00,2.20,22.00,4.40
+2025-04-02,Wednesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-02,Wednesday,Margherita Pizza,Entree,42,18.00,3.60,756.00,151.20
+2025-04-02,Wednesday,Pepperoni Pizza,Entree,34,20.00,4.40,680.00,149.60
+2025-04-02,Wednesday,Truffle Pizza,Entree,5,28.00,8.20,140.00,41.00
+2025-04-02,Wednesday,Cacio e Pepe,Entree,29,22.00,3.80,638.00,110.20
+2025-04-02,Wednesday,Spaghetti Carbonara,Entree,21,24.00,5.10,504.00,107.10
+2025-04-02,Wednesday,Lasagna Bolognese,Entree,14,26.00,6.30,364.00,88.20
+2025-04-02,Wednesday,Mushroom Risotto,Entree,12,25.00,5.40,300.00,64.80
+2025-04-02,Wednesday,Branzino,Entree,9,38.00,14.20,342.00,127.80
+2025-04-02,Wednesday,Osso Buco,Entree,7,42.00,16.80,294.00,117.60
+2025-04-02,Wednesday,Veal Parmesan,Entree,17,32.00,9.20,544.00,156.40
+2025-04-02,Wednesday,Eggplant Parmesan,Entree,7,22.00,4.40,154.00,30.80
+2025-04-02,Wednesday,Tiramisu,Dessert,20,9.00,1.80,180.00,36.00
+2025-04-02,Wednesday,Cannoli (2pc),Dessert,16,8.00,1.60,128.00,25.60
+2025-04-02,Wednesday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-02,Wednesday,Gelato,Dessert,13,7.00,1.30,91.00,16.90
+2025-04-02,Wednesday,House Wine - Glass,Beverage,46,11.00,1.80,506.00,82.80
+2025-04-02,Wednesday,Espresso,Beverage,22,3.50,0.40,77.00,8.80
+2025-04-02,Wednesday,Cappuccino,Beverage,14,4.50,0.55,63.00,7.70
+2025-04-02,Wednesday,San Pellegrino,Beverage,12,5.00,0.80,60.00,9.60
+2025-04-03,Thursday,Caesar Salad,Appetizer,18,12.00,2.80,216.00,50.40
+2025-04-03,Thursday,Burrata & Tomato,Appetizer,10,16.00,5.20,160.00,52.00
+2025-04-03,Thursday,Calamari Fritti,Appetizer,10,14.00,4.10,140.00,41.00
+2025-04-03,Thursday,Mushroom Bruschetta,Appetizer,2,11.00,2.20,22.00,4.40
+2025-04-03,Thursday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-03,Thursday,Margherita Pizza,Entree,35,18.00,3.60,630.00,126.00
+2025-04-03,Thursday,Pepperoni Pizza,Entree,29,20.00,4.40,580.00,127.60
+2025-04-03,Thursday,Truffle Pizza,Entree,9,28.00,8.20,252.00,73.80
+2025-04-03,Thursday,Cacio e Pepe,Entree,34,22.00,3.80,748.00,129.20
+2025-04-03,Thursday,Spaghetti Carbonara,Entree,24,24.00,5.10,576.00,122.40
+2025-04-03,Thursday,Lasagna Bolognese,Entree,20,26.00,6.30,520.00,126.00
+2025-04-03,Thursday,Mushroom Risotto,Entree,12,25.00,5.40,300.00,64.80
+2025-04-03,Thursday,Branzino,Entree,8,38.00,14.20,304.00,113.60
+2025-04-03,Thursday,Osso Buco,Entree,6,42.00,16.80,252.00,100.80
+2025-04-03,Thursday,Veal Parmesan,Entree,19,32.00,9.20,608.00,174.80
+2025-04-03,Thursday,Eggplant Parmesan,Entree,8,22.00,4.40,176.00,35.20
+2025-04-03,Thursday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-03,Thursday,Tiramisu,Dessert,35,9.00,1.80,315.00,63.00
+2025-04-03,Thursday,Cannoli (2pc),Dessert,13,8.00,1.60,104.00,20.80
+2025-04-03,Thursday,Panna Cotta,Dessert,7,8.50,1.40,59.50,9.80
+2025-04-03,Thursday,Gelato,Dessert,22,7.00,1.30,154.00,28.60
+2025-04-03,Thursday,House Wine - Glass,Beverage,63,11.00,1.80,693.00,113.40
+2025-04-03,Thursday,Espresso,Beverage,30,3.50,0.40,105.00,12.00
+2025-04-03,Thursday,Cappuccino,Beverage,24,4.50,0.55,108.00,13.20
+2025-04-03,Thursday,San Pellegrino,Beverage,12,5.00,0.80,60.00,9.60
+2025-04-04,Friday,Caesar Salad,Appetizer,27,12.00,2.80,324.00,75.60
+2025-04-04,Friday,Burrata & Tomato,Appetizer,16,16.00,5.20,256.00,83.20
+2025-04-04,Friday,Calamari Fritti,Appetizer,13,14.00,4.10,182.00,53.30
+2025-04-04,Friday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-04,Friday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-04,Friday,Margherita Pizza,Entree,55,18.00,3.60,990.00,198.00
+2025-04-04,Friday,Pepperoni Pizza,Entree,38,20.00,4.40,760.00,167.20
+2025-04-04,Friday,Truffle Pizza,Entree,11,28.00,8.20,308.00,90.20
+2025-04-04,Friday,Cacio e Pepe,Entree,45,22.00,3.80,990.00,171.00
+2025-04-04,Friday,Spaghetti Carbonara,Entree,33,24.00,5.10,792.00,168.30
+2025-04-04,Friday,Lasagna Bolognese,Entree,25,26.00,6.30,650.00,157.50
+2025-04-04,Friday,Mushroom Risotto,Entree,18,25.00,5.40,450.00,97.20
+2025-04-04,Friday,Branzino,Entree,16,38.00,14.20,608.00,227.20
+2025-04-04,Friday,Osso Buco,Entree,10,42.00,16.80,420.00,168.00
+2025-04-04,Friday,Veal Parmesan,Entree,22,32.00,9.20,704.00,202.40
+2025-04-04,Friday,Eggplant Parmesan,Entree,12,22.00,4.40,264.00,52.80
+2025-04-04,Friday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-04,Friday,Tiramisu,Dessert,36,9.00,1.80,324.00,64.80
+2025-04-04,Friday,Cannoli (2pc),Dessert,22,8.00,1.60,176.00,35.20
+2025-04-04,Friday,Panna Cotta,Dessert,8,8.50,1.40,68.00,11.20
+2025-04-04,Friday,Gelato,Dessert,24,7.00,1.30,168.00,31.20
+2025-04-04,Friday,House Wine - Glass,Beverage,72,11.00,1.80,792.00,129.60
+2025-04-04,Friday,Espresso,Beverage,34,3.50,0.40,119.00,13.60
+2025-04-04,Friday,Cappuccino,Beverage,27,4.50,0.55,121.50,14.85
+2025-04-04,Friday,San Pellegrino,Beverage,19,5.00,0.80,95.00,15.20
+2025-04-05,Saturday,Caesar Salad,Appetizer,37,12.00,2.80,444.00,103.60
+2025-04-05,Saturday,Burrata & Tomato,Appetizer,20,16.00,5.20,320.00,104.00
+2025-04-05,Saturday,Calamari Fritti,Appetizer,16,14.00,4.10,224.00,65.60
+2025-04-05,Saturday,Mushroom Bruschetta,Appetizer,6,11.00,2.20,66.00,13.20
+2025-04-05,Saturday,Soup of the Day,Appetizer,3,8.00,1.40,24.00,4.20
+2025-04-05,Saturday,Margherita Pizza,Entree,62,18.00,3.60,1116.00,223.20
+2025-04-05,Saturday,Pepperoni Pizza,Entree,49,20.00,4.40,980.00,215.60
+2025-04-05,Saturday,Truffle Pizza,Entree,13,28.00,8.20,364.00,106.60
+2025-04-05,Saturday,Cacio e Pepe,Entree,44,22.00,3.80,968.00,167.20
+2025-04-05,Saturday,Spaghetti Carbonara,Entree,41,24.00,5.10,984.00,209.10
+2025-04-05,Saturday,Lasagna Bolognese,Entree,35,26.00,6.30,910.00,220.50
+2025-04-05,Saturday,Mushroom Risotto,Entree,19,25.00,5.40,475.00,102.60
+2025-04-05,Saturday,Branzino,Entree,13,38.00,14.20,494.00,184.60
+2025-04-05,Saturday,Osso Buco,Entree,13,42.00,16.80,546.00,218.40
+2025-04-05,Saturday,Veal Parmesan,Entree,22,32.00,9.20,704.00,202.40
+2025-04-05,Saturday,Eggplant Parmesan,Entree,14,22.00,4.40,308.00,61.60
+2025-04-05,Saturday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-05,Saturday,Tiramisu,Dessert,41,9.00,1.80,369.00,73.80
+2025-04-05,Saturday,Cannoli (2pc),Dessert,22,8.00,1.60,176.00,35.20
+2025-04-05,Saturday,Panna Cotta,Dessert,14,8.50,1.40,119.00,19.60
+2025-04-05,Saturday,Gelato,Dessert,28,7.00,1.30,196.00,36.40
+2025-04-05,Saturday,House Wine - Glass,Beverage,67,11.00,1.80,737.00,120.60
+2025-04-05,Saturday,Espresso,Beverage,49,3.50,0.40,171.50,19.60
+2025-04-05,Saturday,Cappuccino,Beverage,36,4.50,0.55,162.00,19.80
+2025-04-05,Saturday,San Pellegrino,Beverage,20,5.00,0.80,100.00,16.00
+2025-04-06,Sunday,Caesar Salad,Appetizer,20,12.00,2.80,240.00,56.00
+2025-04-06,Sunday,Burrata & Tomato,Appetizer,12,16.00,5.20,192.00,62.40
+2025-04-06,Sunday,Calamari Fritti,Appetizer,4,14.00,4.10,56.00,16.40
+2025-04-06,Sunday,Mushroom Bruschetta,Appetizer,3,11.00,2.20,33.00,6.60
+2025-04-06,Sunday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-06,Sunday,Margherita Pizza,Entree,39,18.00,3.60,702.00,140.40
+2025-04-06,Sunday,Pepperoni Pizza,Entree,33,20.00,4.40,660.00,145.20
+2025-04-06,Sunday,Truffle Pizza,Entree,7,28.00,8.20,196.00,57.40
+2025-04-06,Sunday,Cacio e Pepe,Entree,26,22.00,3.80,572.00,98.80
+2025-04-06,Sunday,Spaghetti Carbonara,Entree,22,24.00,5.10,528.00,112.20
+2025-04-06,Sunday,Lasagna Bolognese,Entree,15,26.00,6.30,390.00,94.50
+2025-04-06,Sunday,Mushroom Risotto,Entree,14,25.00,5.40,350.00,75.60
+2025-04-06,Sunday,Branzino,Entree,10,38.00,14.20,380.00,142.00
+2025-04-06,Sunday,Osso Buco,Entree,8,42.00,16.80,336.00,134.40
+2025-04-06,Sunday,Veal Parmesan,Entree,15,32.00,9.20,480.00,138.00
+2025-04-06,Sunday,Eggplant Parmesan,Entree,9,22.00,4.40,198.00,39.60
+2025-04-06,Sunday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-06,Sunday,Tiramisu,Dessert,22,9.00,1.80,198.00,39.60
+2025-04-06,Sunday,Cannoli (2pc),Dessert,14,8.00,1.60,112.00,22.40
+2025-04-06,Sunday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-06,Sunday,Gelato,Dessert,20,7.00,1.30,140.00,26.00
+2025-04-06,Sunday,House Wine - Glass,Beverage,40,11.00,1.80,440.00,72.00
+2025-04-06,Sunday,Espresso,Beverage,15,3.50,0.40,52.50,6.00
+2025-04-06,Sunday,Cappuccino,Beverage,17,4.50,0.55,76.50,9.35
+2025-04-06,Sunday,San Pellegrino,Beverage,12,5.00,0.80,60.00,9.60
+2025-04-07,Monday,Caesar Salad,Appetizer,6,12.00,2.80,72.00,16.80
+2025-04-07,Monday,Burrata & Tomato,Appetizer,4,16.00,5.20,64.00,20.80
+2025-04-07,Monday,Calamari Fritti,Appetizer,7,14.00,4.10,98.00,28.70
+2025-04-07,Monday,Mushroom Bruschetta,Appetizer,3,11.00,2.20,33.00,6.60
+2025-04-07,Monday,Margherita Pizza,Entree,24,18.00,3.60,432.00,86.40
+2025-04-07,Monday,Pepperoni Pizza,Entree,19,20.00,4.40,380.00,83.60
+2025-04-07,Monday,Truffle Pizza,Entree,3,28.00,8.20,84.00,24.60
+2025-04-07,Monday,Cacio e Pepe,Entree,9,22.00,3.80,198.00,34.20
+2025-04-07,Monday,Spaghetti Carbonara,Entree,10,24.00,5.10,240.00,51.00
+2025-04-07,Monday,Lasagna Bolognese,Entree,16,26.00,6.30,416.00,100.80
+2025-04-07,Monday,Mushroom Risotto,Entree,6,25.00,5.40,150.00,32.40
+2025-04-07,Monday,Branzino,Entree,6,38.00,14.20,228.00,85.20
+2025-04-07,Monday,Osso Buco,Entree,4,42.00,16.80,168.00,67.20
+2025-04-07,Monday,Veal Parmesan,Entree,6,32.00,9.20,192.00,55.20
+2025-04-07,Monday,Eggplant Parmesan,Entree,4,22.00,4.40,88.00,17.60
+2025-04-07,Monday,Tiramisu,Dessert,7,9.00,1.80,63.00,12.60
+2025-04-07,Monday,Cannoli (2pc),Dessert,8,8.00,1.60,64.00,12.80
+2025-04-07,Monday,Panna Cotta,Dessert,2,8.50,1.40,17.00,2.80
+2025-04-07,Monday,Gelato,Dessert,13,7.00,1.30,91.00,16.90
+2025-04-07,Monday,House Wine - Glass,Beverage,22,11.00,1.80,242.00,39.60
+2025-04-07,Monday,Espresso,Beverage,6,3.50,0.40,21.00,2.40
+2025-04-07,Monday,Cappuccino,Beverage,13,4.50,0.55,58.50,7.15
+2025-04-07,Monday,San Pellegrino,Beverage,7,5.00,0.80,35.00,5.60
+2025-04-08,Tuesday,Caesar Salad,Appetizer,9,12.00,2.80,108.00,25.20
+2025-04-08,Tuesday,Burrata & Tomato,Appetizer,9,16.00,5.20,144.00,46.80
+2025-04-08,Tuesday,Calamari Fritti,Appetizer,4,14.00,4.10,56.00,16.40
+2025-04-08,Tuesday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-08,Tuesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-08,Tuesday,Margherita Pizza,Entree,30,18.00,3.60,540.00,108.00
+2025-04-08,Tuesday,Pepperoni Pizza,Entree,12,20.00,4.40,240.00,52.80
+2025-04-08,Tuesday,Truffle Pizza,Entree,4,28.00,8.20,112.00,32.80
+2025-04-08,Tuesday,Cacio e Pepe,Entree,15,22.00,3.80,330.00,57.00
+2025-04-08,Tuesday,Spaghetti Carbonara,Entree,14,24.00,5.10,336.00,71.40
+2025-04-08,Tuesday,Lasagna Bolognese,Entree,10,26.00,6.30,260.00,63.00
+2025-04-08,Tuesday,Mushroom Risotto,Entree,6,25.00,5.40,150.00,32.40
+2025-04-08,Tuesday,Branzino,Entree,4,38.00,14.20,152.00,56.80
+2025-04-08,Tuesday,Osso Buco,Entree,5,42.00,16.80,210.00,84.00
+2025-04-08,Tuesday,Veal Parmesan,Entree,8,32.00,9.20,256.00,73.60
+2025-04-08,Tuesday,Eggplant Parmesan,Entree,6,22.00,4.40,132.00,26.40
+2025-04-08,Tuesday,Caprese Sandwich,Lunch,1,14.00,3.20,14.00,3.20
+2025-04-08,Tuesday,Tiramisu,Dessert,11,9.00,1.80,99.00,19.80
+2025-04-08,Tuesday,Cannoli (2pc),Dessert,9,8.00,1.60,72.00,14.40
+2025-04-08,Tuesday,Panna Cotta,Dessert,4,8.50,1.40,34.00,5.60
+2025-04-08,Tuesday,Gelato,Dessert,12,7.00,1.30,84.00,15.60
+2025-04-08,Tuesday,House Wine - Glass,Beverage,37,11.00,1.80,407.00,66.60
+2025-04-08,Tuesday,Espresso,Beverage,20,3.50,0.40,70.00,8.00
+2025-04-08,Tuesday,Cappuccino,Beverage,11,4.50,0.55,49.50,6.05
+2025-04-08,Tuesday,San Pellegrino,Beverage,6,5.00,0.80,30.00,4.80
+2025-04-09,Wednesday,Caesar Salad,Appetizer,18,12.00,2.80,216.00,50.40
+2025-04-09,Wednesday,Burrata & Tomato,Appetizer,14,16.00,5.20,224.00,72.80
+2025-04-09,Wednesday,Calamari Fritti,Appetizer,8,14.00,4.10,112.00,32.80
+2025-04-09,Wednesday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-09,Wednesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-09,Wednesday,Margherita Pizza,Entree,27,18.00,3.60,486.00,97.20
+2025-04-09,Wednesday,Pepperoni Pizza,Entree,36,20.00,4.40,720.00,158.40
+2025-04-09,Wednesday,Truffle Pizza,Entree,3,28.00,8.20,84.00,24.60
+2025-04-09,Wednesday,Cacio e Pepe,Entree,21,22.00,3.80,462.00,79.80
+2025-04-09,Wednesday,Spaghetti Carbonara,Entree,15,24.00,5.10,360.00,76.50
+2025-04-09,Wednesday,Lasagna Bolognese,Entree,16,26.00,6.30,416.00,100.80
+2025-04-09,Wednesday,Mushroom Risotto,Entree,10,25.00,5.40,250.00,54.00
+2025-04-09,Wednesday,Branzino,Entree,8,38.00,14.20,304.00,113.60
+2025-04-09,Wednesday,Osso Buco,Entree,6,42.00,16.80,252.00,100.80
+2025-04-09,Wednesday,Veal Parmesan,Entree,11,32.00,9.20,352.00,101.20
+2025-04-09,Wednesday,Eggplant Parmesan,Entree,6,22.00,4.40,132.00,26.40
+2025-04-09,Wednesday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-09,Wednesday,Tiramisu,Dessert,21,9.00,1.80,189.00,37.80
+2025-04-09,Wednesday,Cannoli (2pc),Dessert,9,8.00,1.60,72.00,14.40
+2025-04-09,Wednesday,Panna Cotta,Dessert,5,8.50,1.40,42.50,7.00
+2025-04-09,Wednesday,Gelato,Dessert,13,7.00,1.30,91.00,16.90
+2025-04-09,Wednesday,House Wine - Glass,Beverage,39,11.00,1.80,429.00,70.20
+2025-04-09,Wednesday,Espresso,Beverage,22,3.50,0.40,77.00,8.80
+2025-04-09,Wednesday,Cappuccino,Beverage,24,4.50,0.55,108.00,13.20
+2025-04-09,Wednesday,San Pellegrino,Beverage,10,5.00,0.80,50.00,8.00
+2025-04-10,Thursday,Caesar Salad,Appetizer,20,12.00,2.80,240.00,56.00
+2025-04-10,Thursday,Burrata & Tomato,Appetizer,10,16.00,5.20,160.00,52.00
+2025-04-10,Thursday,Calamari Fritti,Appetizer,8,14.00,4.10,112.00,32.80
+2025-04-10,Thursday,Mushroom Bruschetta,Appetizer,2,11.00,2.20,22.00,4.40
+2025-04-10,Thursday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-10,Thursday,Margherita Pizza,Entree,37,18.00,3.60,666.00,133.20
+2025-04-10,Thursday,Pepperoni Pizza,Entree,29,20.00,4.40,580.00,127.60
+2025-04-10,Thursday,Truffle Pizza,Entree,7,28.00,8.20,196.00,57.40
+2025-04-10,Thursday,Cacio e Pepe,Entree,25,22.00,3.80,550.00,95.00
+2025-04-10,Thursday,Spaghetti Carbonara,Entree,20,24.00,5.10,480.00,102.00
+2025-04-10,Thursday,Lasagna Bolognese,Entree,16,26.00,6.30,416.00,100.80
+2025-04-10,Thursday,Mushroom Risotto,Entree,9,25.00,5.40,225.00,48.60
+2025-04-10,Thursday,Branzino,Entree,7,38.00,14.20,266.00,99.40
+2025-04-10,Thursday,Osso Buco,Entree,7,42.00,16.80,294.00,117.60
+2025-04-10,Thursday,Veal Parmesan,Entree,17,32.00,9.20,544.00,156.40
+2025-04-10,Thursday,Eggplant Parmesan,Entree,6,22.00,4.40,132.00,26.40
+2025-04-10,Thursday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-10,Thursday,Tiramisu,Dessert,24,9.00,1.80,216.00,43.20
+2025-04-10,Thursday,Cannoli (2pc),Dessert,13,8.00,1.60,104.00,20.80
+2025-04-10,Thursday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-10,Thursday,Gelato,Dessert,14,7.00,1.30,98.00,18.20
+2025-04-10,Thursday,House Wine - Glass,Beverage,34,11.00,1.80,374.00,61.20
+2025-04-10,Thursday,Espresso,Beverage,25,3.50,0.40,87.50,10.00
+2025-04-10,Thursday,Cappuccino,Beverage,24,4.50,0.55,108.00,13.20
+2025-04-10,Thursday,San Pellegrino,Beverage,12,5.00,0.80,60.00,9.60
+2025-04-11,Friday,Caesar Salad,Appetizer,24,12.00,2.80,288.00,67.20
+2025-04-11,Friday,Burrata & Tomato,Appetizer,19,16.00,5.20,304.00,98.80
+2025-04-11,Friday,Calamari Fritti,Appetizer,17,14.00,4.10,238.00,69.70
+2025-04-11,Friday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-11,Friday,Soup of the Day,Appetizer,2,8.00,1.40,16.00,2.80
+2025-04-11,Friday,Margherita Pizza,Entree,48,18.00,3.60,864.00,172.80
+2025-04-11,Friday,Pepperoni Pizza,Entree,41,20.00,4.40,820.00,180.40
+2025-04-11,Friday,Truffle Pizza,Entree,10,28.00,8.20,280.00,82.00
+2025-04-11,Friday,Cacio e Pepe,Entree,40,22.00,3.80,880.00,152.00
+2025-04-11,Friday,Spaghetti Carbonara,Entree,35,24.00,5.10,840.00,178.50
+2025-04-11,Friday,Lasagna Bolognese,Entree,34,26.00,6.30,884.00,214.20
+2025-04-11,Friday,Mushroom Risotto,Entree,17,25.00,5.40,425.00,91.80
+2025-04-11,Friday,Branzino,Entree,17,38.00,14.20,646.00,241.40
+2025-04-11,Friday,Osso Buco,Entree,12,42.00,16.80,504.00,201.60
+2025-04-11,Friday,Veal Parmesan,Entree,22,32.00,9.20,704.00,202.40
+2025-04-11,Friday,Eggplant Parmesan,Entree,13,22.00,4.40,286.00,57.20
+2025-04-11,Friday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-11,Friday,Tiramisu,Dessert,35,9.00,1.80,315.00,63.00
+2025-04-11,Friday,Cannoli (2pc),Dessert,17,8.00,1.60,136.00,27.20
+2025-04-11,Friday,Panna Cotta,Dessert,8,8.50,1.40,68.00,11.20
+2025-04-11,Friday,Gelato,Dessert,28,7.00,1.30,196.00,36.40
+2025-04-11,Friday,House Wine - Glass,Beverage,70,11.00,1.80,770.00,126.00
+2025-04-11,Friday,Espresso,Beverage,42,3.50,0.40,147.00,16.80
+2025-04-11,Friday,Cappuccino,Beverage,35,4.50,0.55,157.50,19.25
+2025-04-11,Friday,San Pellegrino,Beverage,17,5.00,0.80,85.00,13.60
+2025-04-12,Saturday,Caesar Salad,Appetizer,31,12.00,2.80,372.00,86.80
+2025-04-12,Saturday,Burrata & Tomato,Appetizer,23,16.00,5.20,368.00,119.60
+2025-04-12,Saturday,Calamari Fritti,Appetizer,13,14.00,4.10,182.00,53.30
+2025-04-12,Saturday,Mushroom Bruschetta,Appetizer,5,11.00,2.20,55.00,11.00
+2025-04-12,Saturday,Soup of the Day,Appetizer,2,8.00,1.40,16.00,2.80
+2025-04-12,Saturday,Margherita Pizza,Entree,56,18.00,3.60,1008.00,201.60
+2025-04-12,Saturday,Pepperoni Pizza,Entree,51,20.00,4.40,1020.00,224.40
+2025-04-12,Saturday,Truffle Pizza,Entree,11,28.00,8.20,308.00,90.20
+2025-04-12,Saturday,Cacio e Pepe,Entree,37,22.00,3.80,814.00,140.60
+2025-04-12,Saturday,Spaghetti Carbonara,Entree,32,24.00,5.10,768.00,163.20
+2025-04-12,Saturday,Lasagna Bolognese,Entree,28,26.00,6.30,728.00,176.40
+2025-04-12,Saturday,Mushroom Risotto,Entree,18,25.00,5.40,450.00,97.20
+2025-04-12,Saturday,Branzino,Entree,13,38.00,14.20,494.00,184.60
+2025-04-12,Saturday,Osso Buco,Entree,9,42.00,16.80,378.00,151.20
+2025-04-12,Saturday,Veal Parmesan,Entree,24,32.00,9.20,768.00,220.80
+2025-04-12,Saturday,Eggplant Parmesan,Entree,10,22.00,4.40,220.00,44.00
+2025-04-12,Saturday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-12,Saturday,Tiramisu,Dessert,35,9.00,1.80,315.00,63.00
+2025-04-12,Saturday,Cannoli (2pc),Dessert,19,8.00,1.60,152.00,30.40
+2025-04-12,Saturday,Panna Cotta,Dessert,10,8.50,1.40,85.00,14.00
+2025-04-12,Saturday,Gelato,Dessert,26,7.00,1.30,182.00,33.80
+2025-04-12,Saturday,House Wine - Glass,Beverage,61,11.00,1.80,671.00,109.80
+2025-04-12,Saturday,Espresso,Beverage,45,3.50,0.40,157.50,18.00
+2025-04-12,Saturday,Cappuccino,Beverage,24,4.50,0.55,108.00,13.20
+2025-04-12,Saturday,San Pellegrino,Beverage,18,5.00,0.80,90.00,14.40
+2025-04-13,Sunday,Caesar Salad,Appetizer,20,12.00,2.80,240.00,56.00
+2025-04-13,Sunday,Burrata & Tomato,Appetizer,11,16.00,5.20,176.00,57.20
+2025-04-13,Sunday,Calamari Fritti,Appetizer,8,14.00,4.10,112.00,32.80
+2025-04-13,Sunday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-13,Sunday,Margherita Pizza,Entree,37,18.00,3.60,666.00,133.20
+2025-04-13,Sunday,Pepperoni Pizza,Entree,25,20.00,4.40,500.00,110.00
+2025-04-13,Sunday,Truffle Pizza,Entree,6,28.00,8.20,168.00,49.20
+2025-04-13,Sunday,Cacio e Pepe,Entree,26,22.00,3.80,572.00,98.80
+2025-04-13,Sunday,Spaghetti Carbonara,Entree,27,24.00,5.10,648.00,137.70
+2025-04-13,Sunday,Lasagna Bolognese,Entree,23,26.00,6.30,598.00,144.90
+2025-04-13,Sunday,Mushroom Risotto,Entree,12,25.00,5.40,300.00,64.80
+2025-04-13,Sunday,Branzino,Entree,11,38.00,14.20,418.00,156.20
+2025-04-13,Sunday,Osso Buco,Entree,8,42.00,16.80,336.00,134.40
+2025-04-13,Sunday,Veal Parmesan,Entree,18,32.00,9.20,576.00,165.60
+2025-04-13,Sunday,Eggplant Parmesan,Entree,7,22.00,4.40,154.00,30.80
+2025-04-13,Sunday,Caprese Sandwich,Lunch,4,14.00,3.20,56.00,12.80
+2025-04-13,Sunday,Tiramisu,Dessert,26,9.00,1.80,234.00,46.80
+2025-04-13,Sunday,Cannoli (2pc),Dessert,18,8.00,1.60,144.00,28.80
+2025-04-13,Sunday,Panna Cotta,Dessert,8,8.50,1.40,68.00,11.20
+2025-04-13,Sunday,Gelato,Dessert,17,7.00,1.30,119.00,22.10
+2025-04-13,Sunday,House Wine - Glass,Beverage,50,11.00,1.80,550.00,90.00
+2025-04-13,Sunday,Espresso,Beverage,34,3.50,0.40,119.00,13.60
+2025-04-13,Sunday,Cappuccino,Beverage,22,4.50,0.55,99.00,12.10
+2025-04-13,Sunday,San Pellegrino,Beverage,13,5.00,0.80,65.00,10.40
+2025-04-14,Monday,Caesar Salad,Appetizer,11,12.00,2.80,132.00,30.80
+2025-04-14,Monday,Burrata & Tomato,Appetizer,10,16.00,5.20,160.00,52.00
+2025-04-14,Monday,Calamari Fritti,Appetizer,5,14.00,4.10,70.00,20.50
+2025-04-14,Monday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-14,Monday,Margherita Pizza,Entree,30,18.00,3.60,540.00,108.00
+2025-04-14,Monday,Pepperoni Pizza,Entree,28,20.00,4.40,560.00,123.20
+2025-04-14,Monday,Truffle Pizza,Entree,4,28.00,8.20,112.00,32.80
+2025-04-14,Monday,Cacio e Pepe,Entree,19,22.00,3.80,418.00,72.20
+2025-04-14,Monday,Spaghetti Carbonara,Entree,22,24.00,5.10,528.00,112.20
+2025-04-14,Monday,Lasagna Bolognese,Entree,9,26.00,6.30,234.00,56.70
+2025-04-14,Monday,Mushroom Risotto,Entree,8,25.00,5.40,200.00,43.20
+2025-04-14,Monday,Branzino,Entree,8,38.00,14.20,304.00,113.60
+2025-04-14,Monday,Osso Buco,Entree,5,42.00,16.80,210.00,84.00
+2025-04-14,Monday,Veal Parmesan,Entree,8,32.00,9.20,256.00,73.60
+2025-04-14,Monday,Eggplant Parmesan,Entree,4,22.00,4.40,88.00,17.60
+2025-04-14,Monday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-14,Monday,Tiramisu,Dessert,19,9.00,1.80,171.00,34.20
+2025-04-14,Monday,Cannoli (2pc),Dessert,8,8.00,1.60,64.00,12.80
+2025-04-14,Monday,Panna Cotta,Dessert,5,8.50,1.40,42.50,7.00
+2025-04-14,Monday,Gelato,Dessert,15,7.00,1.30,105.00,19.50
+2025-04-14,Monday,House Wine - Glass,Beverage,34,11.00,1.80,374.00,61.20
+2025-04-14,Monday,Espresso,Beverage,20,3.50,0.40,70.00,8.00
+2025-04-14,Monday,Cappuccino,Beverage,9,4.50,0.55,40.50,4.95
+2025-04-14,Monday,San Pellegrino,Beverage,11,5.00,0.80,55.00,8.80
+2025-04-15,Tuesday,Caesar Salad,Appetizer,15,12.00,2.80,180.00,42.00
+2025-04-15,Tuesday,Burrata & Tomato,Appetizer,11,16.00,5.20,176.00,57.20
+2025-04-15,Tuesday,Calamari Fritti,Appetizer,6,14.00,4.10,84.00,24.60
+2025-04-15,Tuesday,Mushroom Bruschetta,Appetizer,3,11.00,2.20,33.00,6.60
+2025-04-15,Tuesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-15,Tuesday,Margherita Pizza,Entree,26,18.00,3.60,468.00,93.60
+2025-04-15,Tuesday,Pepperoni Pizza,Entree,33,20.00,4.40,660.00,145.20
+2025-04-15,Tuesday,Truffle Pizza,Entree,5,28.00,8.20,140.00,41.00
+2025-04-15,Tuesday,Cacio e Pepe,Entree,23,22.00,3.80,506.00,87.40
+2025-04-15,Tuesday,Spaghetti Carbonara,Entree,18,24.00,5.10,432.00,91.80
+2025-04-15,Tuesday,Lasagna Bolognese,Entree,13,26.00,6.30,338.00,81.90
+2025-04-15,Tuesday,Mushroom Risotto,Entree,11,25.00,5.40,275.00,59.40
+2025-04-15,Tuesday,Branzino,Entree,8,38.00,14.20,304.00,113.60
+2025-04-15,Tuesday,Osso Buco,Entree,5,42.00,16.80,210.00,84.00
+2025-04-15,Tuesday,Veal Parmesan,Entree,11,32.00,9.20,352.00,101.20
+2025-04-15,Tuesday,Eggplant Parmesan,Entree,3,22.00,4.40,66.00,13.20
+2025-04-15,Tuesday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-15,Tuesday,Tiramisu,Dessert,20,9.00,1.80,180.00,36.00
+2025-04-15,Tuesday,Cannoli (2pc),Dessert,8,8.00,1.60,64.00,12.80
+2025-04-15,Tuesday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-15,Tuesday,Gelato,Dessert,10,7.00,1.30,70.00,13.00
+2025-04-15,Tuesday,House Wine - Glass,Beverage,33,11.00,1.80,363.00,59.40
+2025-04-15,Tuesday,Espresso,Beverage,17,3.50,0.40,59.50,6.80
+2025-04-15,Tuesday,Cappuccino,Beverage,13,4.50,0.55,58.50,7.15
+2025-04-15,Tuesday,San Pellegrino,Beverage,8,5.00,0.80,40.00,6.40
+2025-04-16,Wednesday,Caesar Salad,Appetizer,22,12.00,2.80,264.00,61.60
+2025-04-16,Wednesday,Burrata & Tomato,Appetizer,11,16.00,5.20,176.00,57.20
+2025-04-16,Wednesday,Calamari Fritti,Appetizer,8,14.00,4.10,112.00,32.80
+2025-04-16,Wednesday,Mushroom Bruschetta,Appetizer,3,11.00,2.20,33.00,6.60
+2025-04-16,Wednesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-16,Wednesday,Margherita Pizza,Entree,26,18.00,3.60,468.00,93.60
+2025-04-16,Wednesday,Pepperoni Pizza,Entree,29,20.00,4.40,580.00,127.60
+2025-04-16,Wednesday,Truffle Pizza,Entree,4,28.00,8.20,112.00,32.80
+2025-04-16,Wednesday,Cacio e Pepe,Entree,24,22.00,3.80,528.00,91.20
+2025-04-16,Wednesday,Spaghetti Carbonara,Entree,9,24.00,5.10,216.00,45.90
+2025-04-16,Wednesday,Lasagna Bolognese,Entree,19,26.00,6.30,494.00,119.70
+2025-04-16,Wednesday,Mushroom Risotto,Entree,14,25.00,5.40,350.00,75.60
+2025-04-16,Wednesday,Branzino,Entree,12,38.00,14.20,456.00,170.40
+2025-04-16,Wednesday,Osso Buco,Entree,6,42.00,16.80,252.00,100.80
+2025-04-16,Wednesday,Veal Parmesan,Entree,18,32.00,9.20,576.00,165.60
+2025-04-16,Wednesday,Eggplant Parmesan,Entree,6,22.00,4.40,132.00,26.40
+2025-04-16,Wednesday,Caprese Sandwich,Lunch,1,14.00,3.20,14.00,3.20
+2025-04-16,Wednesday,Tiramisu,Dessert,28,9.00,1.80,252.00,50.40
+2025-04-16,Wednesday,Cannoli (2pc),Dessert,15,8.00,1.60,120.00,24.00
+2025-04-16,Wednesday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-16,Wednesday,Gelato,Dessert,21,7.00,1.30,147.00,27.30
+2025-04-16,Wednesday,House Wine - Glass,Beverage,40,11.00,1.80,440.00,72.00
+2025-04-16,Wednesday,Espresso,Beverage,29,3.50,0.40,101.50,11.60
+2025-04-16,Wednesday,Cappuccino,Beverage,20,4.50,0.55,90.00,11.00
+2025-04-16,Wednesday,San Pellegrino,Beverage,12,5.00,0.80,60.00,9.60
+2025-04-17,Thursday,Caesar Salad,Appetizer,15,12.00,2.80,180.00,42.00
+2025-04-17,Thursday,Burrata & Tomato,Appetizer,15,16.00,5.20,240.00,78.00
+2025-04-17,Thursday,Calamari Fritti,Appetizer,9,14.00,4.10,126.00,36.90
+2025-04-17,Thursday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-17,Thursday,Margherita Pizza,Entree,34,18.00,3.60,612.00,122.40
+2025-04-17,Thursday,Pepperoni Pizza,Entree,30,20.00,4.40,600.00,132.00
+2025-04-17,Thursday,Truffle Pizza,Entree,6,28.00,8.20,168.00,49.20
+2025-04-17,Thursday,Cacio e Pepe,Entree,26,22.00,3.80,572.00,98.80
+2025-04-17,Thursday,Spaghetti Carbonara,Entree,20,24.00,5.10,480.00,102.00
+2025-04-17,Thursday,Lasagna Bolognese,Entree,22,26.00,6.30,572.00,138.60
+2025-04-17,Thursday,Mushroom Risotto,Entree,11,25.00,5.40,275.00,59.40
+2025-04-17,Thursday,Branzino,Entree,9,38.00,14.20,342.00,127.80
+2025-04-17,Thursday,Osso Buco,Entree,5,42.00,16.80,210.00,84.00
+2025-04-17,Thursday,Veal Parmesan,Entree,15,32.00,9.20,480.00,138.00
+2025-04-17,Thursday,Eggplant Parmesan,Entree,5,22.00,4.40,110.00,22.00
+2025-04-17,Thursday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-17,Thursday,Tiramisu,Dessert,19,9.00,1.80,171.00,34.20
+2025-04-17,Thursday,Cannoli (2pc),Dessert,9,8.00,1.60,72.00,14.40
+2025-04-17,Thursday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-17,Thursday,Gelato,Dessert,13,7.00,1.30,91.00,16.90
+2025-04-17,Thursday,House Wine - Glass,Beverage,46,11.00,1.80,506.00,82.80
+2025-04-17,Thursday,Espresso,Beverage,20,3.50,0.40,70.00,8.00
+2025-04-17,Thursday,Cappuccino,Beverage,20,4.50,0.55,90.00,11.00
+2025-04-17,Thursday,San Pellegrino,Beverage,13,5.00,0.80,65.00,10.40
+2025-04-18,Friday,Caesar Salad,Appetizer,28,12.00,2.80,336.00,78.40
+2025-04-18,Friday,Burrata & Tomato,Appetizer,28,16.00,5.20,448.00,145.60
+2025-04-18,Friday,Calamari Fritti,Appetizer,13,14.00,4.10,182.00,53.30
+2025-04-18,Friday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-18,Friday,Soup of the Day,Appetizer,2,8.00,1.40,16.00,2.80
+2025-04-18,Friday,Margherita Pizza,Entree,56,18.00,3.60,1008.00,201.60
+2025-04-18,Friday,Pepperoni Pizza,Entree,51,20.00,4.40,1020.00,224.40
+2025-04-18,Friday,Truffle Pizza,Entree,10,28.00,8.20,280.00,82.00
+2025-04-18,Friday,Cacio e Pepe,Entree,33,22.00,3.80,726.00,125.40
+2025-04-18,Friday,Spaghetti Carbonara,Entree,33,24.00,5.10,792.00,168.30
+2025-04-18,Friday,Lasagna Bolognese,Entree,33,26.00,6.30,858.00,207.90
+2025-04-18,Friday,Mushroom Risotto,Entree,18,25.00,5.40,450.00,97.20
+2025-04-18,Friday,Branzino,Entree,13,38.00,14.20,494.00,184.60
+2025-04-18,Friday,Osso Buco,Entree,12,42.00,16.80,504.00,201.60
+2025-04-18,Friday,Veal Parmesan,Entree,23,32.00,9.20,736.00,211.60
+2025-04-18,Friday,Eggplant Parmesan,Entree,8,22.00,4.40,176.00,35.20
+2025-04-18,Friday,Caprese Sandwich,Lunch,5,14.00,3.20,70.00,16.00
+2025-04-18,Friday,Tiramisu,Dessert,29,9.00,1.80,261.00,52.20
+2025-04-18,Friday,Cannoli (2pc),Dessert,19,8.00,1.60,152.00,30.40
+2025-04-18,Friday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-18,Friday,Gelato,Dessert,29,7.00,1.30,203.00,37.70
+2025-04-18,Friday,House Wine - Glass,Beverage,57,11.00,1.80,627.00,102.60
+2025-04-18,Friday,Espresso,Beverage,47,3.50,0.40,164.50,18.80
+2025-04-18,Friday,Cappuccino,Beverage,30,4.50,0.55,135.00,16.50
+2025-04-18,Friday,San Pellegrino,Beverage,18,5.00,0.80,90.00,14.40
+2025-04-19,Saturday,Caesar Salad,Appetizer,31,12.00,2.80,372.00,86.80
+2025-04-19,Saturday,Burrata & Tomato,Appetizer,20,16.00,5.20,320.00,104.00
+2025-04-19,Saturday,Calamari Fritti,Appetizer,14,14.00,4.10,196.00,57.40
+2025-04-19,Saturday,Mushroom Bruschetta,Appetizer,6,11.00,2.20,66.00,13.20
+2025-04-19,Saturday,Soup of the Day,Appetizer,3,8.00,1.40,24.00,4.20
+2025-04-19,Saturday,Margherita Pizza,Entree,48,18.00,3.60,864.00,172.80
+2025-04-19,Saturday,Pepperoni Pizza,Entree,41,20.00,4.40,820.00,180.40
+2025-04-19,Saturday,Truffle Pizza,Entree,10,28.00,8.20,280.00,82.00
+2025-04-19,Saturday,Cacio e Pepe,Entree,35,22.00,3.80,770.00,133.00
+2025-04-19,Saturday,Spaghetti Carbonara,Entree,37,24.00,5.10,888.00,188.70
+2025-04-19,Saturday,Lasagna Bolognese,Entree,28,26.00,6.30,728.00,176.40
+2025-04-19,Saturday,Mushroom Risotto,Entree,19,25.00,5.40,475.00,102.60
+2025-04-19,Saturday,Branzino,Entree,12,38.00,14.20,456.00,170.40
+2025-04-19,Saturday,Osso Buco,Entree,9,42.00,16.80,378.00,151.20
+2025-04-19,Saturday,Veal Parmesan,Entree,20,32.00,9.20,640.00,184.00
+2025-04-19,Saturday,Eggplant Parmesan,Entree,7,22.00,4.40,154.00,30.80
+2025-04-19,Saturday,Caprese Sandwich,Lunch,4,14.00,3.20,56.00,12.80
+2025-04-19,Saturday,Tiramisu,Dessert,35,9.00,1.80,315.00,63.00
+2025-04-19,Saturday,Cannoli (2pc),Dessert,17,8.00,1.60,136.00,27.20
+2025-04-19,Saturday,Panna Cotta,Dessert,9,8.50,1.40,76.50,12.60
+2025-04-19,Saturday,Gelato,Dessert,19,7.00,1.30,133.00,24.70
+2025-04-19,Saturday,House Wine - Glass,Beverage,72,11.00,1.80,792.00,129.60
+2025-04-19,Saturday,Espresso,Beverage,37,3.50,0.40,129.50,14.80
+2025-04-19,Saturday,Cappuccino,Beverage,32,4.50,0.55,144.00,17.60
+2025-04-19,Saturday,San Pellegrino,Beverage,17,5.00,0.80,85.00,13.60
+2025-04-20,Sunday,Caesar Salad,Appetizer,28,12.00,2.80,336.00,78.40
+2025-04-20,Sunday,Burrata & Tomato,Appetizer,24,16.00,5.20,384.00,124.80
+2025-04-20,Sunday,Calamari Fritti,Appetizer,11,14.00,4.10,154.00,45.10
+2025-04-20,Sunday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-20,Sunday,Soup of the Day,Appetizer,2,8.00,1.40,16.00,2.80
+2025-04-20,Sunday,Margherita Pizza,Entree,44,18.00,3.60,792.00,158.40
+2025-04-20,Sunday,Pepperoni Pizza,Entree,42,20.00,4.40,840.00,184.80
+2025-04-20,Sunday,Truffle Pizza,Entree,9,28.00,8.20,252.00,73.80
+2025-04-20,Sunday,Cacio e Pepe,Entree,29,22.00,3.80,638.00,110.20
+2025-04-20,Sunday,Spaghetti Carbonara,Entree,24,24.00,5.10,576.00,122.40
+2025-04-20,Sunday,Lasagna Bolognese,Entree,22,26.00,6.30,572.00,138.60
+2025-04-20,Sunday,Mushroom Risotto,Entree,15,25.00,5.40,375.00,81.00
+2025-04-20,Sunday,Branzino,Entree,11,38.00,14.20,418.00,156.20
+2025-04-20,Sunday,Osso Buco,Entree,11,42.00,16.80,462.00,184.80
+2025-04-20,Sunday,Veal Parmesan,Entree,21,32.00,9.20,672.00,193.20
+2025-04-20,Sunday,Eggplant Parmesan,Entree,8,22.00,4.40,176.00,35.20
+2025-04-20,Sunday,Caprese Sandwich,Lunch,4,14.00,3.20,56.00,12.80
+2025-04-20,Sunday,Tiramisu,Dessert,37,9.00,1.80,333.00,66.60
+2025-04-20,Sunday,Cannoli (2pc),Dessert,13,8.00,1.60,104.00,20.80
+2025-04-20,Sunday,Panna Cotta,Dessert,8,8.50,1.40,68.00,11.20
+2025-04-20,Sunday,Gelato,Dessert,17,7.00,1.30,119.00,22.10
+2025-04-20,Sunday,House Wine - Glass,Beverage,53,11.00,1.80,583.00,95.40
+2025-04-20,Sunday,Espresso,Beverage,34,3.50,0.40,119.00,13.60
+2025-04-20,Sunday,Cappuccino,Beverage,24,4.50,0.55,108.00,13.20
+2025-04-20,Sunday,San Pellegrino,Beverage,15,5.00,0.80,75.00,12.00
+2025-04-21,Monday,Caesar Salad,Appetizer,14,12.00,2.80,168.00,39.20
+2025-04-21,Monday,Burrata & Tomato,Appetizer,7,16.00,5.20,112.00,36.40
+2025-04-21,Monday,Calamari Fritti,Appetizer,8,14.00,4.10,112.00,32.80
+2025-04-21,Monday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-21,Monday,Margherita Pizza,Entree,18,18.00,3.60,324.00,64.80
+2025-04-21,Monday,Pepperoni Pizza,Entree,20,20.00,4.40,400.00,88.00
+2025-04-21,Monday,Truffle Pizza,Entree,5,28.00,8.20,140.00,41.00
+2025-04-21,Monday,Cacio e Pepe,Entree,27,22.00,3.80,594.00,102.60
+2025-04-21,Monday,Spaghetti Carbonara,Entree,21,24.00,5.10,504.00,107.10
+2025-04-21,Monday,Lasagna Bolognese,Entree,12,26.00,6.30,312.00,75.60
+2025-04-21,Monday,Mushroom Risotto,Entree,7,25.00,5.40,175.00,37.80
+2025-04-21,Monday,Branzino,Entree,9,38.00,14.20,342.00,127.80
+2025-04-21,Monday,Osso Buco,Entree,4,42.00,16.80,168.00,67.20
+2025-04-21,Monday,Veal Parmesan,Entree,10,32.00,9.20,320.00,92.00
+2025-04-21,Monday,Eggplant Parmesan,Entree,1,22.00,4.40,22.00,4.40
+2025-04-21,Monday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-21,Monday,Tiramisu,Dessert,10,9.00,1.80,90.00,18.00
+2025-04-21,Monday,Cannoli (2pc),Dessert,7,8.00,1.60,56.00,11.20
+2025-04-21,Monday,Panna Cotta,Dessert,4,8.50,1.40,34.00,5.60
+2025-04-21,Monday,Gelato,Dessert,11,7.00,1.30,77.00,14.30
+2025-04-21,Monday,House Wine - Glass,Beverage,22,11.00,1.80,242.00,39.60
+2025-04-21,Monday,Espresso,Beverage,13,3.50,0.40,45.50,5.20
+2025-04-21,Monday,Cappuccino,Beverage,10,4.50,0.55,45.00,5.50
+2025-04-21,Monday,San Pellegrino,Beverage,3,5.00,0.80,15.00,2.40
+2025-04-22,Tuesday,Caesar Salad,Appetizer,13,12.00,2.80,156.00,36.40
+2025-04-22,Tuesday,Burrata & Tomato,Appetizer,11,16.00,5.20,176.00,57.20
+2025-04-22,Tuesday,Calamari Fritti,Appetizer,4,14.00,4.10,56.00,16.40
+2025-04-22,Tuesday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-22,Tuesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-22,Tuesday,Margherita Pizza,Entree,20,18.00,3.60,360.00,72.00
+2025-04-22,Tuesday,Pepperoni Pizza,Entree,23,20.00,4.40,460.00,101.20
+2025-04-22,Tuesday,Truffle Pizza,Entree,3,28.00,8.20,84.00,24.60
+2025-04-22,Tuesday,Cacio e Pepe,Entree,18,22.00,3.80,396.00,68.40
+2025-04-22,Tuesday,Spaghetti Carbonara,Entree,10,24.00,5.10,240.00,51.00
+2025-04-22,Tuesday,Lasagna Bolognese,Entree,12,26.00,6.30,312.00,75.60
+2025-04-22,Tuesday,Mushroom Risotto,Entree,9,25.00,5.40,225.00,48.60
+2025-04-22,Tuesday,Branzino,Entree,5,38.00,14.20,190.00,71.00
+2025-04-22,Tuesday,Osso Buco,Entree,3,42.00,16.80,126.00,50.40
+2025-04-22,Tuesday,Veal Parmesan,Entree,5,32.00,9.20,160.00,46.00
+2025-04-22,Tuesday,Eggplant Parmesan,Entree,1,22.00,4.40,22.00,4.40
+2025-04-22,Tuesday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-22,Tuesday,Tiramisu,Dessert,16,9.00,1.80,144.00,28.80
+2025-04-22,Tuesday,Cannoli (2pc),Dessert,4,8.00,1.60,32.00,6.40
+2025-04-22,Tuesday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-22,Tuesday,Gelato,Dessert,9,7.00,1.30,63.00,11.70
+2025-04-22,Tuesday,House Wine - Glass,Beverage,15,11.00,1.80,165.00,27.00
+2025-04-22,Tuesday,Espresso,Beverage,17,3.50,0.40,59.50,6.80
+2025-04-22,Tuesday,Cappuccino,Beverage,13,4.50,0.55,58.50,7.15
+2025-04-22,Tuesday,San Pellegrino,Beverage,7,5.00,0.80,35.00,5.60
+2025-04-23,Wednesday,Caesar Salad,Appetizer,26,12.00,2.80,312.00,72.80
+2025-04-23,Wednesday,Burrata & Tomato,Appetizer,26,16.00,5.20,416.00,135.20
+2025-04-23,Wednesday,Calamari Fritti,Appetizer,11,14.00,4.10,154.00,45.10
+2025-04-23,Wednesday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-23,Wednesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-23,Wednesday,Margherita Pizza,Entree,40,18.00,3.60,720.00,144.00
+2025-04-23,Wednesday,Pepperoni Pizza,Entree,29,20.00,4.40,580.00,127.60
+2025-04-23,Wednesday,Truffle Pizza,Entree,8,28.00,8.20,224.00,65.60
+2025-04-23,Wednesday,Cacio e Pepe,Entree,22,22.00,3.80,484.00,83.60
+2025-04-23,Wednesday,Spaghetti Carbonara,Entree,23,24.00,5.10,552.00,117.30
+2025-04-23,Wednesday,Lasagna Bolognese,Entree,24,26.00,6.30,624.00,151.20
+2025-04-23,Wednesday,Mushroom Risotto,Entree,10,25.00,5.40,250.00,54.00
+2025-04-23,Wednesday,Branzino,Entree,8,38.00,14.20,304.00,113.60
+2025-04-23,Wednesday,Osso Buco,Entree,5,42.00,16.80,210.00,84.00
+2025-04-23,Wednesday,Veal Parmesan,Entree,14,32.00,9.20,448.00,128.80
+2025-04-23,Wednesday,Eggplant Parmesan,Entree,7,22.00,4.40,154.00,30.80
+2025-04-23,Wednesday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-23,Wednesday,Tiramisu,Dessert,20,9.00,1.80,180.00,36.00
+2025-04-23,Wednesday,Cannoli (2pc),Dessert,11,8.00,1.60,88.00,17.60
+2025-04-23,Wednesday,Panna Cotta,Dessert,7,8.50,1.40,59.50,9.80
+2025-04-23,Wednesday,Gelato,Dessert,17,7.00,1.30,119.00,22.10
+2025-04-23,Wednesday,House Wine - Glass,Beverage,44,11.00,1.80,484.00,79.20
+2025-04-23,Wednesday,Espresso,Beverage,30,3.50,0.40,105.00,12.00
+2025-04-23,Wednesday,Cappuccino,Beverage,15,4.50,0.55,67.50,8.25
+2025-04-23,Wednesday,San Pellegrino,Beverage,9,5.00,0.80,45.00,7.20
+2025-04-24,Thursday,Caesar Salad,Appetizer,23,12.00,2.80,276.00,64.40
+2025-04-24,Thursday,Burrata & Tomato,Appetizer,23,16.00,5.20,368.00,119.60
+2025-04-24,Thursday,Calamari Fritti,Appetizer,9,14.00,4.10,126.00,36.90
+2025-04-24,Thursday,Mushroom Bruschetta,Appetizer,3,11.00,2.20,33.00,6.60
+2025-04-24,Thursday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-24,Thursday,Margherita Pizza,Entree,38,18.00,3.60,684.00,136.80
+2025-04-24,Thursday,Pepperoni Pizza,Entree,22,20.00,4.40,440.00,96.80
+2025-04-24,Thursday,Truffle Pizza,Entree,6,28.00,8.20,168.00,49.20
+2025-04-24,Thursday,Cacio e Pepe,Entree,20,22.00,3.80,440.00,76.00
+2025-04-24,Thursday,Spaghetti Carbonara,Entree,28,24.00,5.10,672.00,142.80
+2025-04-24,Thursday,Lasagna Bolognese,Entree,18,26.00,6.30,468.00,113.40
+2025-04-24,Thursday,Mushroom Risotto,Entree,12,25.00,5.40,300.00,64.80
+2025-04-24,Thursday,Branzino,Entree,9,38.00,14.20,342.00,127.80
+2025-04-24,Thursday,Osso Buco,Entree,8,42.00,16.80,336.00,134.40
+2025-04-24,Thursday,Veal Parmesan,Entree,14,32.00,9.20,448.00,128.80
+2025-04-24,Thursday,Eggplant Parmesan,Entree,5,22.00,4.40,110.00,22.00
+2025-04-24,Thursday,Caprese Sandwich,Lunch,3,14.00,3.20,42.00,9.60
+2025-04-24,Thursday,Tiramisu,Dessert,26,9.00,1.80,234.00,46.80
+2025-04-24,Thursday,Cannoli (2pc),Dessert,11,8.00,1.60,88.00,17.60
+2025-04-24,Thursday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-24,Thursday,Gelato,Dessert,17,7.00,1.30,119.00,22.10
+2025-04-24,Thursday,House Wine - Glass,Beverage,33,11.00,1.80,363.00,59.40
+2025-04-24,Thursday,Espresso,Beverage,25,3.50,0.40,87.50,10.00
+2025-04-24,Thursday,Cappuccino,Beverage,19,4.50,0.55,85.50,10.45
+2025-04-24,Thursday,San Pellegrino,Beverage,13,5.00,0.80,65.00,10.40
+2025-04-25,Friday,Caesar Salad,Appetizer,26,12.00,2.80,312.00,72.80
+2025-04-25,Friday,Burrata & Tomato,Appetizer,25,16.00,5.20,400.00,130.00
+2025-04-25,Friday,Calamari Fritti,Appetizer,12,14.00,4.10,168.00,49.20
+2025-04-25,Friday,Mushroom Bruschetta,Appetizer,5,11.00,2.20,55.00,11.00
+2025-04-25,Friday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-25,Friday,Margherita Pizza,Entree,42,18.00,3.60,756.00,151.20
+2025-04-25,Friday,Pepperoni Pizza,Entree,47,20.00,4.40,940.00,206.80
+2025-04-25,Friday,Truffle Pizza,Entree,10,28.00,8.20,280.00,82.00
+2025-04-25,Friday,Cacio e Pepe,Entree,37,22.00,3.80,814.00,140.60
+2025-04-25,Friday,Spaghetti Carbonara,Entree,29,24.00,5.10,696.00,147.90
+2025-04-25,Friday,Lasagna Bolognese,Entree,28,26.00,6.30,728.00,176.40
+2025-04-25,Friday,Mushroom Risotto,Entree,18,25.00,5.40,450.00,97.20
+2025-04-25,Friday,Branzino,Entree,14,38.00,14.20,532.00,198.80
+2025-04-25,Friday,Osso Buco,Entree,8,42.00,16.80,336.00,134.40
+2025-04-25,Friday,Veal Parmesan,Entree,19,32.00,9.20,608.00,174.80
+2025-04-25,Friday,Eggplant Parmesan,Entree,7,22.00,4.40,154.00,30.80
+2025-04-25,Friday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-25,Friday,Tiramisu,Dessert,30,9.00,1.80,270.00,54.00
+2025-04-25,Friday,Cannoli (2pc),Dessert,18,8.00,1.60,144.00,28.80
+2025-04-25,Friday,Panna Cotta,Dessert,7,8.50,1.40,59.50,9.80
+2025-04-25,Friday,Gelato,Dessert,23,7.00,1.30,161.00,29.90
+2025-04-25,Friday,House Wine - Glass,Beverage,43,11.00,1.80,473.00,77.40
+2025-04-25,Friday,Espresso,Beverage,45,3.50,0.40,157.50,18.00
+2025-04-25,Friday,Cappuccino,Beverage,28,4.50,0.55,126.00,15.40
+2025-04-25,Friday,San Pellegrino,Beverage,14,5.00,0.80,70.00,11.20
+2025-04-26,Saturday,Caesar Salad,Appetizer,35,12.00,2.80,420.00,98.00
+2025-04-26,Saturday,Burrata & Tomato,Appetizer,35,16.00,5.20,560.00,182.00
+2025-04-26,Saturday,Calamari Fritti,Appetizer,18,14.00,4.10,252.00,73.80
+2025-04-26,Saturday,Mushroom Bruschetta,Appetizer,7,11.00,2.20,77.00,15.40
+2025-04-26,Saturday,Soup of the Day,Appetizer,3,8.00,1.40,24.00,4.20
+2025-04-26,Saturday,Margherita Pizza,Entree,68,18.00,3.60,1224.00,244.80
+2025-04-26,Saturday,Pepperoni Pizza,Entree,57,20.00,4.40,1140.00,250.80
+2025-04-26,Saturday,Truffle Pizza,Entree,13,28.00,8.20,364.00,106.60
+2025-04-26,Saturday,Cacio e Pepe,Entree,45,22.00,3.80,990.00,171.00
+2025-04-26,Saturday,Spaghetti Carbonara,Entree,35,24.00,5.10,840.00,178.50
+2025-04-26,Saturday,Lasagna Bolognese,Entree,38,26.00,6.30,988.00,239.40
+2025-04-26,Saturday,Mushroom Risotto,Entree,18,25.00,5.40,450.00,97.20
+2025-04-26,Saturday,Branzino,Entree,17,38.00,14.20,646.00,241.40
+2025-04-26,Saturday,Osso Buco,Entree,14,42.00,16.80,588.00,235.20
+2025-04-26,Saturday,Veal Parmesan,Entree,27,32.00,9.20,864.00,248.40
+2025-04-26,Saturday,Eggplant Parmesan,Entree,8,22.00,4.40,176.00,35.20
+2025-04-26,Saturday,Caprese Sandwich,Lunch,7,14.00,3.20,98.00,22.40
+2025-04-26,Saturday,Tiramisu,Dessert,49,9.00,1.80,441.00,88.20
+2025-04-26,Saturday,Cannoli (2pc),Dessert,21,8.00,1.60,168.00,33.60
+2025-04-26,Saturday,Panna Cotta,Dessert,10,8.50,1.40,85.00,14.00
+2025-04-26,Saturday,Gelato,Dessert,29,7.00,1.30,203.00,37.70
+2025-04-26,Saturday,House Wine - Glass,Beverage,78,11.00,1.80,858.00,140.40
+2025-04-26,Saturday,Espresso,Beverage,49,3.50,0.40,171.50,19.60
+2025-04-26,Saturday,Cappuccino,Beverage,37,4.50,0.55,166.50,20.35
+2025-04-26,Saturday,San Pellegrino,Beverage,24,5.00,0.80,120.00,19.20
+2025-04-27,Sunday,Caesar Salad,Appetizer,23,12.00,2.80,276.00,64.40
+2025-04-27,Sunday,Burrata & Tomato,Appetizer,24,16.00,5.20,384.00,124.80
+2025-04-27,Sunday,Calamari Fritti,Appetizer,12,14.00,4.10,168.00,49.20
+2025-04-27,Sunday,Mushroom Bruschetta,Appetizer,4,11.00,2.20,44.00,8.80
+2025-04-27,Sunday,Soup of the Day,Appetizer,2,8.00,1.40,16.00,2.80
+2025-04-27,Sunday,Margherita Pizza,Entree,35,18.00,3.60,630.00,126.00
+2025-04-27,Sunday,Pepperoni Pizza,Entree,46,20.00,4.40,920.00,202.40
+2025-04-27,Sunday,Truffle Pizza,Entree,6,28.00,8.20,168.00,49.20
+2025-04-27,Sunday,Cacio e Pepe,Entree,40,22.00,3.80,880.00,152.00
+2025-04-27,Sunday,Spaghetti Carbonara,Entree,28,24.00,5.10,672.00,142.80
+2025-04-27,Sunday,Lasagna Bolognese,Entree,23,26.00,6.30,598.00,144.90
+2025-04-27,Sunday,Mushroom Risotto,Entree,11,25.00,5.40,275.00,59.40
+2025-04-27,Sunday,Branzino,Entree,12,38.00,14.20,456.00,170.40
+2025-04-27,Sunday,Osso Buco,Entree,7,42.00,16.80,294.00,117.60
+2025-04-27,Sunday,Veal Parmesan,Entree,16,32.00,9.20,512.00,147.20
+2025-04-27,Sunday,Eggplant Parmesan,Entree,4,22.00,4.40,88.00,17.60
+2025-04-27,Sunday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-27,Sunday,Tiramisu,Dessert,26,9.00,1.80,234.00,46.80
+2025-04-27,Sunday,Cannoli (2pc),Dessert,12,8.00,1.60,96.00,19.20
+2025-04-27,Sunday,Panna Cotta,Dessert,6,8.50,1.40,51.00,8.40
+2025-04-27,Sunday,Gelato,Dessert,25,7.00,1.30,175.00,32.50
+2025-04-27,Sunday,House Wine - Glass,Beverage,37,11.00,1.80,407.00,66.60
+2025-04-27,Sunday,Espresso,Beverage,26,3.50,0.40,91.00,10.40
+2025-04-27,Sunday,Cappuccino,Beverage,27,4.50,0.55,121.50,14.85
+2025-04-27,Sunday,San Pellegrino,Beverage,15,5.00,0.80,75.00,12.00
+2025-04-28,Monday,Caesar Salad,Appetizer,15,12.00,2.80,180.00,42.00
+2025-04-28,Monday,Burrata & Tomato,Appetizer,9,16.00,5.20,144.00,46.80
+2025-04-28,Monday,Calamari Fritti,Appetizer,6,14.00,4.10,84.00,24.60
+2025-04-28,Monday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-28,Monday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-28,Monday,Margherita Pizza,Entree,29,18.00,3.60,522.00,104.40
+2025-04-28,Monday,Pepperoni Pizza,Entree,23,20.00,4.40,460.00,101.20
+2025-04-28,Monday,Truffle Pizza,Entree,3,28.00,8.20,84.00,24.60
+2025-04-28,Monday,Cacio e Pepe,Entree,11,22.00,3.80,242.00,41.80
+2025-04-28,Monday,Spaghetti Carbonara,Entree,11,24.00,5.10,264.00,56.10
+2025-04-28,Monday,Lasagna Bolognese,Entree,13,26.00,6.30,338.00,81.90
+2025-04-28,Monday,Mushroom Risotto,Entree,7,25.00,5.40,175.00,37.80
+2025-04-28,Monday,Branzino,Entree,6,38.00,14.20,228.00,85.20
+2025-04-28,Monday,Osso Buco,Entree,4,42.00,16.80,168.00,67.20
+2025-04-28,Monday,Veal Parmesan,Entree,6,32.00,9.20,192.00,55.20
+2025-04-28,Monday,Eggplant Parmesan,Entree,2,22.00,4.40,44.00,8.80
+2025-04-28,Monday,Tiramisu,Dessert,19,9.00,1.80,171.00,34.20
+2025-04-28,Monday,Cannoli (2pc),Dessert,7,8.00,1.60,56.00,11.20
+2025-04-28,Monday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-28,Monday,Gelato,Dessert,8,7.00,1.30,56.00,10.40
+2025-04-28,Monday,House Wine - Glass,Beverage,24,11.00,1.80,264.00,43.20
+2025-04-28,Monday,Espresso,Beverage,16,3.50,0.40,56.00,6.40
+2025-04-28,Monday,Cappuccino,Beverage,18,4.50,0.55,81.00,9.90
+2025-04-28,Monday,San Pellegrino,Beverage,4,5.00,0.80,20.00,3.20
+2025-04-29,Tuesday,Caesar Salad,Appetizer,12,12.00,2.80,144.00,33.60
+2025-04-29,Tuesday,Burrata & Tomato,Appetizer,8,16.00,5.20,128.00,41.60
+2025-04-29,Tuesday,Calamari Fritti,Appetizer,5,14.00,4.10,70.00,20.50
+2025-04-29,Tuesday,Mushroom Bruschetta,Appetizer,2,11.00,2.20,22.00,4.40
+2025-04-29,Tuesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-29,Tuesday,Margherita Pizza,Entree,15,18.00,3.60,270.00,54.00
+2025-04-29,Tuesday,Pepperoni Pizza,Entree,8,20.00,4.40,160.00,35.20
+2025-04-29,Tuesday,Truffle Pizza,Entree,4,28.00,8.20,112.00,32.80
+2025-04-29,Tuesday,Cacio e Pepe,Entree,10,22.00,3.80,220.00,38.00
+2025-04-29,Tuesday,Spaghetti Carbonara,Entree,12,24.00,5.10,288.00,61.20
+2025-04-29,Tuesday,Lasagna Bolognese,Entree,7,26.00,6.30,182.00,44.10
+2025-04-29,Tuesday,Mushroom Risotto,Entree,7,25.00,5.40,175.00,37.80
+2025-04-29,Tuesday,Branzino,Entree,6,38.00,14.20,228.00,85.20
+2025-04-29,Tuesday,Osso Buco,Entree,3,42.00,16.80,126.00,50.40
+2025-04-29,Tuesday,Veal Parmesan,Entree,10,32.00,9.20,320.00,92.00
+2025-04-29,Tuesday,Eggplant Parmesan,Entree,2,22.00,4.40,44.00,8.80
+2025-04-29,Tuesday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-29,Tuesday,Tiramisu,Dessert,9,9.00,1.80,81.00,16.20
+2025-04-29,Tuesday,Cannoli (2pc),Dessert,7,8.00,1.60,56.00,11.20
+2025-04-29,Tuesday,Panna Cotta,Dessert,3,8.50,1.40,25.50,4.20
+2025-04-29,Tuesday,Gelato,Dessert,14,7.00,1.30,98.00,18.20
+2025-04-29,Tuesday,House Wine - Glass,Beverage,18,11.00,1.80,198.00,32.40
+2025-04-29,Tuesday,Espresso,Beverage,16,3.50,0.40,56.00,6.40
+2025-04-29,Tuesday,Cappuccino,Beverage,10,4.50,0.55,45.00,5.50
+2025-04-29,Tuesday,San Pellegrino,Beverage,8,5.00,0.80,40.00,6.40
+2025-04-30,Wednesday,Caesar Salad,Appetizer,16,12.00,2.80,192.00,44.80
+2025-04-30,Wednesday,Burrata & Tomato,Appetizer,18,16.00,5.20,288.00,93.60
+2025-04-30,Wednesday,Calamari Fritti,Appetizer,6,14.00,4.10,84.00,24.60
+2025-04-30,Wednesday,Mushroom Bruschetta,Appetizer,1,11.00,2.20,11.00,2.20
+2025-04-30,Wednesday,Soup of the Day,Appetizer,1,8.00,1.40,8.00,1.40
+2025-04-30,Wednesday,Margherita Pizza,Entree,27,18.00,3.60,486.00,97.20
+2025-04-30,Wednesday,Pepperoni Pizza,Entree,24,20.00,4.40,480.00,105.60
+2025-04-30,Wednesday,Truffle Pizza,Entree,7,28.00,8.20,196.00,57.40
+2025-04-30,Wednesday,Cacio e Pepe,Entree,15,22.00,3.80,330.00,57.00
+2025-04-30,Wednesday,Spaghetti Carbonara,Entree,12,24.00,5.10,288.00,61.20
+2025-04-30,Wednesday,Lasagna Bolognese,Entree,18,26.00,6.30,468.00,113.40
+2025-04-30,Wednesday,Mushroom Risotto,Entree,10,25.00,5.40,250.00,54.00
+2025-04-30,Wednesday,Branzino,Entree,6,38.00,14.20,228.00,85.20
+2025-04-30,Wednesday,Osso Buco,Entree,7,42.00,16.80,294.00,117.60
+2025-04-30,Wednesday,Veal Parmesan,Entree,15,32.00,9.20,480.00,138.00
+2025-04-30,Wednesday,Eggplant Parmesan,Entree,1,22.00,4.40,22.00,4.40
+2025-04-30,Wednesday,Caprese Sandwich,Lunch,2,14.00,3.20,28.00,6.40
+2025-04-30,Wednesday,Tiramisu,Dessert,16,9.00,1.80,144.00,28.80
+2025-04-30,Wednesday,Cannoli (2pc),Dessert,5,8.00,1.60,40.00,8.00
+2025-04-30,Wednesday,Panna Cotta,Dessert,4,8.50,1.40,34.00,5.60
+2025-04-30,Wednesday,Gelato,Dessert,8,7.00,1.30,56.00,10.40
+2025-04-30,Wednesday,House Wine - Glass,Beverage,45,11.00,1.80,495.00,81.00
+2025-04-30,Wednesday,Espresso,Beverage,18,3.50,0.40,63.00,7.20
+2025-04-30,Wednesday,Cappuccino,Beverage,12,4.50,0.55,54.00,6.60
+2025-04-30,Wednesday,San Pellegrino,Beverage,9,5.00,0.80,45.00,7.20

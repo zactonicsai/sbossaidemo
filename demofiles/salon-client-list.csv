@@ -1,0 +1,201 @@
+client_id,first_name,last_name,phone,email,first_visit,last_visit,total_visits,total_spend,avg_spend_per_visit,most_common_service,preferred_stylist
+C1001,Liam,Martin,555-218-4966,liam.martin@example.com,2024-11-14,2025-02-23,3,255.00,85.00,Blowout,Ana
+C1002,Mason,Martin,555-926-3713,mason.martin@example.com,2023-06-13,2025-03-30,29,4420.00,152.41,Haircut,Brittany
+C1003,Liam,Perez,555-402-3378,liam.perez@example.com,2023-06-13,2025-01-27,5,730.00,146.00,Deep Conditioning,Taylor
+C1004,Noah,Wilson,555-417-4185,noah.wilson@example.com,2023-07-27,2025-02-18,5,600.00,120.00,Haircut + Color,Jasmine
+C1005,Mason,Rodriguez,555-325-6337,mason.rodriguez@example.com,2023-06-03,2025-04-14,22,3400.00,154.55,Deep Conditioning,Taylor
+C1006,James,Wilson,555-779-2930,james.wilson@example.com,2023-11-13,2025-03-04,5,425.00,85.00,Haircut,Jasmine
+C1007,Mason,Harris,555-881-6877,mason.harris@example.com,2023-04-14,2025-02-06,4,475.00,118.75,Haircut + Highlights,Taylor
+C1008,Nora,Miller,555-200-3387,nora.miller@example.com,2023-12-01,2025-04-10,10,1350.00,135.00,Deep Conditioning,Jasmine
+C1009,Noah,Jackson,555-141-1482,noah.jackson@example.com,2023-03-28,2025-02-26,11,1500.00,136.36,Blowout,Jasmine
+C1010,Mila,Clark,555-953-7343,mila.clark@example.com,2024-09-06,2025-03-04,6,510.00,85.00,Deep Conditioning,Taylor
+C1011,Harper,Brown,555-847-7035,harper.brown@example.com,2024-12-07,2025-03-28,21,2840.00,135.24,Haircut,Jasmine
+C1012,Riley,Hernandez,555-917-2508,riley.hernandez@example.com,2023-06-29,2025-03-18,13,1935.00,148.85,Haircut + Highlights,Brittany
+C1013,Chloe,Thompson,555-303-4320,chloe.thompson@example.com,2024-04-29,2025-01-13,9,1060.00,117.78,Haircut + Color,Brittany
+C1014,Evelyn,Brown,555-510-2781,evelyn.brown@example.com,2024-02-13,2025-04-01,2,500.00,250.00,Haircut + Highlights,Brittany
+C1015,Scarlett,Young,555-687-6651,scarlett.young@example.com,2023-08-07,2025-04-17,15,2750.00,183.33,Haircut + Color,Brittany
+C1016,Mia,Rodriguez,555-244-7481,mia.rodriguez@example.com,2024-11-16,2025-03-04,7,690.00,98.57,Blowout,Ana
+C1017,Aria,Johnson,555-154-4874,aria.johnson@example.com,2024-04-10,2025-03-27,1,55.00,55.00,Blowout,Brittany
+C1018,Harper,White,555-291-2231,harper.white@example.com,2024-07-30,2025-03-21,7,1635.00,233.57,Keratin Treatment,Maria
+C1019,Oliver,Davis,555-529-3811,oliver.davis@example.com,2023-06-01,2025-01-12,4,720.00,180.00,Blowout,Taylor
+C1020,Scarlett,Gonzalez,555-997-2883,scarlett.gonzalez@example.com,2024-03-22,2025-01-24,4,750.00,187.50,Balayage,Taylor
+C1021,Amelia,Martin,555-604-9922,amelia.martin@example.com,2024-11-06,2025-01-28,4,760.00,190.00,Color Touch-up,Brittany
+C1022,Luna,White,555-512-9134,luna.white@example.com,2024-11-23,2025-03-25,1,320.00,320.00,Keratin Treatment,Jasmine
+C1023,Mason,Anderson,555-247-2382,mason.anderson@example.com,2023-07-16,2025-03-20,3,205.00,68.33,Color Touch-up,Jasmine
+C1024,Amelia,Martinez,555-652-8328,amelia.martinez@example.com,2024-01-23,2025-03-01,4,370.00,92.50,Haircut,Maria
+C1025,Nora,Hernandez,555-140-9753,nora.hernandez@example.com,2023-05-02,2025-02-28,8,1375.00,171.88,Haircut + Color,Ana
+C1026,Evelyn,Thomas,555-917-1555,evelyn.thomas@example.com,2024-01-12,2025-02-13,5,715.00,143.00,Haircut + Highlights,Taylor
+C1027,Hazel,Sanchez,555-568-1586,hazel.sanchez@example.com,2023-08-18,2025-03-19,14,1860.00,132.86,Bridal Updo,Brittany
+C1028,Sophia,Wilson,555-499-8825,sophia.wilson@example.com,2023-10-19,2025-03-20,1,45.00,45.00,Deep Conditioning,Jasmine
+C1029,Scarlett,Clark,555-489-2277,scarlett.clark@example.com,2024-05-16,2025-04-22,1,320.00,320.00,Keratin Treatment,Taylor
+C1030,Sophia,Sanchez,555-977-8151,sophia.sanchez@example.com,2024-06-18,2025-01-17,4,655.00,163.75,Bridal Updo,Taylor
+C1031,Mila,Harris,555-797-9591,mila.harris@example.com,2023-10-17,2024-11-05,5,955.00,191.00,Bridal Updo,Maria
+C1032,Luna,Thompson,555-789-3045,luna.thompson@example.com,2024-12-22,2025-03-23,9,850.00,94.44,Haircut,Jasmine
+C1033,Abigail,Walker,555-571-7456,abigail.walker@example.com,2023-11-02,2025-02-06,5,570.00,114.00,Blowout,Jasmine
+C1034,Charlotte,Wilson,555-366-2304,charlotte.wilson@example.com,2024-03-28,2024-11-11,12,1975.00,164.58,Balayage,Ana
+C1035,Liam,Gonzalez,555-703-4631,liam.gonzalez@example.com,2023-11-12,2025-02-27,4,580.00,145.00,Haircut + Highlights,Jasmine
+C1036,Elizabeth,Jackson,555-478-6993,elizabeth.jackson@example.com,2023-10-31,2025-02-02,5,900.00,180.00,Haircut + Color,Maria
+C1037,Daniel,Thompson,555-743-2965,daniel.thompson@example.com,2024-03-14,2025-03-22,10,1455.00,145.50,Balayage,Taylor
+C1038,Oliver,Lee,555-434-6370,oliver.lee@example.com,2024-10-20,2025-04-08,18,2800.00,155.56,Balayage,Jasmine
+C1039,Chloe,Davis,555-735-5354,chloe.davis@example.com,2024-12-08,2025-02-22,9,1480.00,164.44,Deep Conditioning,Jasmine
+C1040,Hazel,Robinson,555-567-7273,hazel.robinson@example.com,2024-06-17,2025-02-13,3,325.00,108.33,Color Touch-up,Taylor
+C1041,Aria,Garcia,555-469-3126,aria.garcia@example.com,2024-02-17,2025-01-20,5,815.00,163.00,Haircut,Jasmine
+C1042,Ethan,Jackson,555-526-1956,ethan.jackson@example.com,2023-09-19,2025-01-29,4,680.00,170.00,Haircut + Highlights,Ana
+C1043,Ethan,Clark,555-241-9072,ethan.clark@example.com,2024-06-06,2025-01-23,4,575.00,143.75,Blowout,Ana
+C1044,Aria,Gonzalez,555-915-6199,aria.gonzalez@example.com,2024-01-13,2025-03-20,2,140.00,70.00,Color Touch-up,Taylor
+C1045,Ella,Davis,555-971-1102,ella.davis@example.com,2024-08-19,2025-03-06,4,370.00,92.50,Haircut,Maria
+C1046,Olivia,Miller,555-313-1091,olivia.miller@example.com,2024-04-07,2024-08-15,8,1580.00,197.50,Balayage,Ana
+C1047,Elizabeth,Moore,555-232-7001,elizabeth.moore@example.com,2025-01-27,2025-04-03,21,3265.00,155.48,Deep Conditioning,Taylor
+C1048,Chloe,Harris,555-721-3346,chloe.harris@example.com,2024-07-07,2025-03-28,11,2285.00,207.73,Haircut + Highlights,Maria
+C1049,Riley,Lopez,555-525-5299,riley.lopez@example.com,2024-03-28,2025-02-01,3,375.00,125.00,Haircut,Brittany
+C1050,Amelia,Rodriguez,555-631-2426,amelia.rodriguez@example.com,2023-10-21,2025-02-05,4,750.00,187.50,Haircut + Highlights,Brittany
+C1051,Amelia,Ramirez,555-245-2478,amelia.ramirez@example.com,2024-02-17,2025-03-16,11,1635.00,148.64,Keratin Treatment,Taylor
+C1052,Oliver,Clark,555-164-8490,oliver.clark@example.com,2024-02-24,2024-10-20,10,1870.00,187.00,Haircut + Color,Jasmine
+C1053,Harper,Taylor,555-680-4507,harper.taylor@example.com,2022-11-23,2024-09-03,6,1040.00,173.33,Haircut + Highlights,Brittany
+C1054,Mason,Davis,555-410-4871,mason.davis@example.com,2023-03-19,2025-03-03,2,260.00,130.00,Color Touch-up,Taylor
+C1055,Scarlett,Miller,555-225-9013,scarlett.miller@example.com,2023-11-25,2025-03-26,8,1150.00,143.75,Blowout,Brittany
+C1056,Chloe,Sanchez,555-691-9161,chloe.sanchez@example.com,2024-01-31,2024-12-15,6,595.00,99.17,Blowout,Taylor
+C1057,Mia,Davis,555-836-2843,mia.davis@example.com,2023-02-07,2024-08-29,12,2435.00,202.92,Keratin Treatment,Jasmine
+C1058,Mason,Lewis,555-879-9010,mason.lewis@example.com,2024-04-16,2025-03-13,14,2150.00,153.57,Haircut + Highlights,Taylor
+C1059,Noah,White,555-917-1662,noah.white@example.com,2024-05-20,2024-09-19,11,1865.00,169.55,Bridal Updo,Jasmine
+C1060,Emma,Hernandez,555-975-6254,emma.hernandez@example.com,2023-06-23,2025-03-30,1,165.00,165.00,Haircut + Color,Maria
+C1061,Avery,Brown,555-589-5541,avery.brown@example.com,2024-07-13,2025-04-02,8,1050.00,131.25,Haircut + Color,Taylor
+C1062,Harper,Johnson,555-803-9189,harper.johnson@example.com,2024-06-19,2025-03-21,3,530.00,176.67,Haircut + Color,Maria
+C1063,Layla,Garcia,555-207-3121,layla.garcia@example.com,2023-12-18,2025-04-03,16,2945.00,184.06,Haircut + Color,Jasmine
+C1064,Olivia,Garcia,555-354-4243,olivia.garcia@example.com,2023-09-03,2025-01-23,3,460.00,153.33,Haircut + Highlights,Taylor
+C1065,Ella,Lee,555-391-1372,ella.lee@example.com,2024-10-24,2025-03-25,12,2055.00,171.25,Haircut + Highlights,Taylor
+C1066,Nora,Anderson,555-710-5697,nora.anderson@example.com,2024-07-08,2025-02-06,3,380.00,126.67,Haircut + Highlights,Brittany
+C1067,Charlotte,Smith,555-221-3324,charlotte.smith@example.com,2023-07-02,2024-12-07,12,1890.00,157.50,Color Touch-up,Ana
+C1068,Harper,Thomas,555-880-3135,harper.thomas@example.com,2024-03-11,2025-03-20,2,140.00,70.00,Color Touch-up,Jasmine
+C1069,Ethan,Smith,555-728-3653,ethan.smith@example.com,2023-12-25,2025-02-27,7,1100.00,157.14,Haircut + Highlights,Brittany
+C1070,Evelyn,Martin,555-333-3129,evelyn.martin@example.com,2023-12-10,2025-04-05,6,705.00,117.50,Deep Conditioning,Jasmine
+C1071,Ethan,Lopez,555-757-1124,ethan.lopez@example.com,2023-03-03,2025-02-06,3,370.00,123.33,Blowout,Jasmine
+C1072,Hazel,Harris,555-471-7644,hazel.harris@example.com,2023-01-03,2024-11-23,3,295.00,98.33,Haircut,Brittany
+C1073,Penelope,Young,555-357-8857,penelope.young@example.com,2023-12-16,2024-10-23,10,1190.00,119.00,Color Touch-up,Maria
+C1074,Charlotte,Lewis,555-925-7759,charlotte.lewis@example.com,2024-07-11,2024-10-06,10,1325.00,132.50,Haircut,Taylor
+C1075,Evelyn,Garcia,555-558-2759,evelyn.garcia@example.com,2023-12-19,2025-02-26,10,1480.00,148.00,Bridal Updo,Jasmine
+C1076,Penelope,Smith,555-143-7694,penelope.smith@example.com,2023-03-30,2024-10-30,4,830.00,207.50,Haircut + Color,Brittany
+C1077,Mia,Martinez,555-820-8036,mia.martinez@example.com,2023-12-04,2025-04-13,22,3140.00,142.73,Bridal Updo,Taylor
+C1078,Abigail,Moore,555-119-1525,abigail.moore@example.com,2023-10-08,2025-04-06,18,2785.00,154.72,Deep Conditioning,Maria
+C1079,Abigail,Anderson,555-227-5133,abigail.anderson@example.com,2023-10-06,2025-03-27,7,1195.00,170.71,Haircut,Maria
+C1080,Emma,Sanchez,555-355-2077,emma.sanchez@example.com,2024-02-03,2025-02-19,5,575.00,115.00,Bridal Updo,Ana
+C1081,Noah,Davis,555-491-2631,noah.davis@example.com,2023-12-05,2025-03-29,16,2870.00,179.38,Keratin Treatment,Jasmine
+C1082,Harper,Moore,555-287-4455,harper.moore@example.com,2023-10-25,2025-03-15,6,1250.00,208.33,Balayage,Taylor
+C1083,Nora,Lee,555-968-3286,nora.lee@example.com,2023-10-23,2025-03-07,5,825.00,165.00,Haircut + Color,Maria
+C1084,Olivia,Jackson,555-616-8349,olivia.jackson@example.com,2023-04-23,2025-02-20,14,1995.00,142.50,Haircut + Color,Jasmine
+C1085,Mason,Garcia,555-147-7861,mason.garcia@example.com,2023-08-19,2025-04-23,29,4250.00,146.55,Bridal Updo,Brittany
+C1086,Nora,Brown,555-784-2376,nora.brown@example.com,2022-12-16,2024-12-08,5,475.00,95.00,Deep Conditioning,Jasmine
+C1087,Aria,Walker,555-702-6810,aria.walker@example.com,2024-11-12,2025-02-24,10,1580.00,158.00,Deep Conditioning,Jasmine
+C1088,Hazel,Garcia,555-354-3900,hazel.garcia@example.com,2023-03-10,2025-02-24,7,880.00,125.71,Deep Conditioning,Brittany
+C1089,Ella,White,555-389-7165,ella.white@example.com,2022-09-21,2024-09-05,11,1430.00,130.00,Deep Conditioning,Brittany
+C1090,Scarlett,Martinez,555-166-8273,scarlett.martinez@example.com,2024-06-25,2025-01-26,5,640.00,128.00,Blowout,Maria
+C1091,Charlotte,Martin,555-509-9727,charlotte.martin@example.com,2023-08-08,2025-04-06,12,1750.00,145.83,Bridal Updo,Taylor
+C1092,Evelyn,Perez,555-144-5169,evelyn.perez@example.com,2024-06-09,2025-04-19,28,4765.00,170.18,Haircut + Color,Ana
+C1093,Scarlett,Jackson,555-708-9818,scarlett.jackson@example.com,2024-05-10,2025-03-30,25,3500.00,140.00,Blowout,Taylor
+C1094,Riley,Johnson,555-181-8255,riley.johnson@example.com,2024-04-17,2025-03-21,5,895.00,179.00,Deep Conditioning,Ana
+C1095,Sofia,Jackson,555-659-7917,sofia.jackson@example.com,2024-01-03,2024-11-29,4,405.00,101.25,Deep Conditioning,Taylor
+C1096,Nora,Martin,555-490-6117,nora.martin@example.com,2023-07-02,2025-01-30,3,520.00,173.33,Blowout,Maria
+C1097,Elizabeth,Gonzalez,555-965-8827,elizabeth.gonzalez@example.com,2024-11-16,2025-03-15,4,770.00,192.50,Haircut + Highlights,Ana
+C1098,Evelyn,Harris,555-585-2287,evelyn.harris@example.com,2024-11-20,2025-04-01,1,165.00,165.00,Haircut + Color,Brittany
+C1099,Nora,Sanchez,555-728-8125,nora.sanchez@example.com,2023-07-27,2025-04-17,27,2880.00,106.67,Blowout,Brittany
+C1100,Mila,Thomas,555-817-5738,mila.thomas@example.com,2024-03-07,2025-04-15,28,4030.00,143.93,Deep Conditioning,Maria
+C1101,Mia,Anderson,555-221-3865,mia.anderson@example.com,2024-05-30,2025-02-05,5,675.00,135.00,Haircut,Jasmine
+C1102,Daniel,Clark,555-281-5602,daniel.clark@example.com,2024-05-08,2024-09-25,9,1175.00,130.56,Deep Conditioning,Maria
+C1103,James,Robinson,555-115-2775,james.robinson@example.com,2023-05-14,2025-01-12,4,320.00,80.00,Haircut,Brittany
+C1104,Penelope,Jackson,555-300-2296,penelope.jackson@example.com,2024-08-31,2025-03-09,2,465.00,232.50,Keratin Treatment,Jasmine
+C1105,Penelope,Perez,555-250-2817,penelope.perez@example.com,2024-05-20,2024-10-04,8,1025.00,128.12,Deep Conditioning,Jasmine
+C1106,Olivia,Rodriguez,555-813-7322,olivia.rodriguez@example.com,2023-12-02,2025-01-19,3,420.00,140.00,Color Touch-up,Taylor
+C1107,Olivia,Taylor,555-226-4810,olivia.taylor@example.com,2024-08-22,2025-02-28,5,570.00,114.00,Blowout,Taylor
+C1108,Elizabeth,Walker,555-214-3292,elizabeth.walker@example.com,2024-11-25,2025-04-12,10,1285.00,128.50,Blowout,Jasmine
+C1109,Charlotte,Young,555-892-7523,charlotte.young@example.com,2023-09-24,2025-02-13,4,950.00,237.50,Keratin Treatment,Jasmine
+C1110,Evelyn,White,555-462-1206,evelyn.white@example.com,2023-09-16,2025-03-15,8,1285.00,160.62,Haircut + Highlights,Taylor
+C1111,Olivia,Ramirez,555-739-4759,olivia.ramirez@example.com,2023-11-20,2024-10-18,12,1770.00,147.50,Balayage,Ana
+C1112,Ethan,Martinez,555-551-8768,ethan.martinez@example.com,2023-10-09,2025-01-16,3,475.00,158.33,Haircut + Color,Taylor
+C1113,Ella,Jackson,555-360-6889,ella.jackson@example.com,2024-05-16,2025-04-01,2,275.00,137.50,Blowout,Ana
+C1114,Abigail,Thomas,555-640-9429,abigail.thomas@example.com,2023-06-07,2025-03-28,21,3505.00,166.90,Bridal Updo,Jasmine
+C1115,Mason,Walker,555-929-2467,mason.walker@example.com,2024-10-05,2025-01-10,12,2150.00,179.17,Keratin Treatment,Taylor
+C1116,Scarlett,Sanchez,555-951-4709,scarlett.sanchez@example.com,2024-07-18,2025-04-12,2,275.00,137.50,Blowout,Taylor
+C1117,Avery,Davis,555-130-7420,avery.davis@example.com,2023-08-15,2025-03-08,3,530.00,176.67,Haircut + Highlights,Jasmine
+C1118,Daniel,Walker,555-271-3387,daniel.walker@example.com,2024-04-12,2025-01-14,3,355.00,118.33,Bridal Updo,Maria
+C1119,Olivia,Lewis,555-293-7105,olivia.lewis@example.com,2024-04-19,2025-04-16,20,2605.00,130.25,Haircut,Brittany
+C1120,Noah,Brown,555-756-3265,noah.brown@example.com,2023-06-27,2025-03-11,9,1225.00,136.11,Blowout,Jasmine
+C1121,Elizabeth,Lopez,555-860-7212,elizabeth.lopez@example.com,2024-01-21,2025-02-21,11,1440.00,130.91,Haircut,Brittany
+C1122,Oliver,Brown,555-762-7438,oliver.brown@example.com,2025-01-05,2025-03-19,6,520.00,86.67,Deep Conditioning,Ana
+C1123,Ella,Robinson,555-661-4314,ella.robinson@example.com,2023-11-29,2025-04-01,17,2385.00,140.29,Bridal Updo,Ana
+C1124,Luna,Martin,555-652-8101,luna.martin@example.com,2024-04-05,2025-01-29,5,795.00,159.00,Deep Conditioning,Taylor
+C1125,Mason,Thompson,555-922-8024,mason.thompson@example.com,2023-11-01,2025-01-13,4,645.00,161.25,Haircut + Color,Jasmine
+C1126,Camila,Taylor,555-489-1240,camila.taylor@example.com,2024-01-24,2024-10-01,12,1810.00,150.83,Deep Conditioning,Ana
+C1127,Sophia,Martin,555-787-3260,sophia.martin@example.com,2024-05-24,2024-10-23,12,2315.00,192.92,Keratin Treatment,Brittany
+C1128,Ella,Anderson,555-194-7599,ella.anderson@example.com,2024-03-27,2025-03-09,3,510.00,170.00,Bridal Updo,Jasmine
+C1129,Sofia,Hernandez,555-235-2724,sofia.hernandez@example.com,2024-04-10,2025-03-08,8,1260.00,157.50,Keratin Treatment,Taylor
+C1130,Camila,White,555-747-7542,camila.white@example.com,2024-10-20,2025-02-21,13,1685.00,129.62,Haircut,Jasmine
+C1131,James,Harris,555-673-6375,james.harris@example.com,2024-04-04,2024-11-16,9,1845.00,205.00,Haircut + Highlights,Ana
+C1132,Emma,Johnson,555-725-3916,emma.johnson@example.com,2025-02-16,2025-04-18,20,2880.00,144.00,Haircut + Color,Brittany
+C1133,Mason,Ramirez,555-595-5201,mason.ramirez@example.com,2025-02-08,2025-04-13,17,2575.00,151.47,Haircut,Maria
+C1134,Mason,Jackson,555-523-4495,mason.jackson@example.com,2023-08-19,2025-02-08,4,700.00,175.00,Blowout,Brittany
+C1135,Camila,Miller,555-585-4312,camila.miller@example.com,2024-06-30,2025-01-20,4,520.00,130.00,Haircut + Color,Ana
+C1136,Noah,Martin,555-445-3480,noah.martin@example.com,2024-06-19,2025-04-22,17,2655.00,156.18,Blowout,Brittany
+C1137,Luna,Robinson,555-919-4733,luna.robinson@example.com,2024-02-28,2025-03-19,14,2235.00,159.64,Bridal Updo,Brittany
+C1138,James,Ramirez,555-438-6472,james.ramirez@example.com,2024-12-11,2025-03-29,2,365.00,182.50,Haircut + Highlights,Maria
+C1139,Avery,Lewis,555-678-3994,avery.lewis@example.com,2024-06-04,2025-03-01,10,1240.00,124.00,Color Touch-up,Maria
+C1140,Layla,Johnson,555-782-2666,layla.johnson@example.com,2024-11-12,2025-02-08,4,605.00,151.25,Blowout,Jasmine
+C1141,Mia,Brown,555-715-1312,mia.brown@example.com,2024-09-29,2025-03-05,2,190.00,95.00,Deep Conditioning,Jasmine
+C1142,Elizabeth,Ramirez,555-782-3215,elizabeth.ramirez@example.com,2024-10-10,2025-03-03,13,1635.00,125.77,Haircut + Highlights,Jasmine
+C1143,Avery,Walker,555-917-5253,avery.walker@example.com,2024-01-01,2025-02-19,11,1480.00,134.55,Haircut,Brittany
+C1144,Riley,Walker,555-883-8257,riley.walker@example.com,2024-08-15,2025-01-24,3,440.00,146.67,Blowout,Jasmine
+C1145,Ethan,Miller,555-384-6705,ethan.miller@example.com,2025-02-08,2025-04-12,14,1775.00,126.79,Haircut,Jasmine
+C1146,Daniel,Johnson,555-731-3855,daniel.johnson@example.com,2023-02-24,2025-01-14,9,1270.00,141.11,Haircut + Color,Taylor
+C1147,Camila,Wilson,555-160-7677,camila.wilson@example.com,2024-07-20,2024-10-22,6,685.00,114.17,Color Touch-up,Brittany
+C1148,Penelope,Lee,555-778-4175,penelope.lee@example.com,2024-07-02,2025-04-11,15,2390.00,159.33,Keratin Treatment,Taylor
+C1149,Hazel,Wilson,555-876-3575,hazel.wilson@example.com,2023-11-06,2025-01-25,3,685.00,228.33,Keratin Treatment,Ana
+C1150,Elizabeth,Smith,555-570-9802,elizabeth.smith@example.com,2024-09-06,2025-02-21,11,1565.00,142.27,Deep Conditioning,Ana
+C1151,Amelia,Lee,555-114-3481,amelia.lee@example.com,2024-05-29,2025-04-02,20,2540.00,127.00,Haircut,Maria
+C1152,Sophia,Anderson,555-977-4048,sophia.anderson@example.com,2024-01-30,2025-02-24,9,1460.00,162.22,Keratin Treatment,Maria
+C1153,Chloe,Lee,555-568-7062,chloe.lee@example.com,2024-05-24,2024-12-14,7,1000.00,142.86,Haircut,Ana
+C1154,Aria,Davis,555-547-4464,aria.davis@example.com,2023-09-12,2025-04-09,29,4690.00,161.72,Haircut + Color,Taylor
+C1155,Camila,Gonzalez,555-490-9466,camila.gonzalez@example.com,2024-09-06,2025-02-09,3,860.00,286.67,Keratin Treatment,Maria
+C1156,Hazel,Johnson,555-591-3824,hazel.johnson@example.com,2023-02-10,2024-11-26,8,1465.00,183.12,Bridal Updo,Taylor
+C1157,Abigail,Gonzalez,555-272-8811,abigail.gonzalez@example.com,2024-10-01,2025-04-20,2,310.00,155.00,Haircut + Color,Jasmine
+C1158,Harper,Perez,555-385-4463,harper.perez@example.com,2023-08-26,2025-03-06,8,1115.00,139.38,Blowout,Jasmine
+C1159,James,Sanchez,555-853-1213,james.sanchez@example.com,2024-07-04,2025-01-09,4,485.00,121.25,Haircut,Jasmine
+C1160,Olivia,Thompson,555-970-3083,olivia.thompson@example.com,2024-01-27,2025-03-29,6,1580.00,263.33,Haircut + Highlights,Maria
+C1161,Evelyn,Wilson,555-148-7670,evelyn.wilson@example.com,2024-01-27,2025-03-05,3,355.00,118.33,Deep Conditioning,Ana
+C1162,Luna,Rodriguez,555-405-7195,luna.rodriguez@example.com,2023-10-20,2025-04-12,16,3015.00,188.44,Haircut + Color,Taylor
+C1163,Olivia,Robinson,555-353-9867,olivia.robinson@example.com,2024-05-22,2025-04-16,1,65.00,65.00,Haircut,Ana
+C1164,Sophia,Perez,555-515-7038,sophia.perez@example.com,2024-01-27,2025-04-06,8,1250.00,156.25,Haircut + Color,Brittany
+C1165,Oliver,Young,555-470-1990,oliver.young@example.com,2024-01-17,2025-03-22,6,900.00,150.00,Deep Conditioning,Ana
+C1166,Penelope,Lopez,555-681-7829,penelope.lopez@example.com,2024-01-25,2024-11-10,7,1090.00,155.71,Deep Conditioning,Ana
+C1167,Emma,Lopez,555-237-8108,emma.lopez@example.com,2023-12-02,2025-02-28,4,1040.00,260.00,Haircut + Highlights,Maria
+C1168,Sophia,Lopez,555-770-6252,sophia.lopez@example.com,2024-02-24,2025-04-10,2,265.00,132.50,Haircut + Highlights,Ana
+C1169,Mia,White,555-345-6097,mia.white@example.com,2023-04-02,2025-03-16,5,895.00,179.00,Deep Conditioning,Maria
+C1170,Nora,Perez,555-237-5615,nora.perez@example.com,2024-04-17,2025-02-16,4,800.00,200.00,Balayage,Brittany
+C1171,Daniel,Davis,555-366-4314,daniel.davis@example.com,2023-12-18,2024-10-24,3,705.00,235.00,Balayage,Maria
+C1172,Noah,Harris,555-984-8649,noah.harris@example.com,2023-12-19,2025-03-01,7,820.00,117.14,Color Touch-up,Brittany
+C1173,Penelope,White,555-495-9237,penelope.white@example.com,2023-11-20,2025-02-24,11,1685.00,153.18,Color Touch-up,Brittany
+C1174,Daniel,Ramirez,555-409-8318,daniel.ramirez@example.com,2023-12-16,2025-03-26,21,2455.00,116.90,Color Touch-up,Jasmine
+C1175,Mia,Robinson,555-345-7028,mia.robinson@example.com,2024-09-07,2025-03-25,1,55.00,55.00,Blowout,Taylor
+C1176,Mia,Hernandez,555-936-2906,mia.hernandez@example.com,2023-10-26,2025-02-22,7,1100.00,157.14,Balayage,Ana
+C1177,Mason,Lopez,555-646-2998,mason.lopez@example.com,2024-12-18,2025-03-18,6,1155.00,192.50,Balayage,Brittany
+C1178,Daniel,Jackson,555-670-5601,daniel.jackson@example.com,2024-07-19,2024-12-20,5,890.00,178.00,Haircut + Color,Ana
+C1179,Camila,Lewis,555-916-8547,camila.lewis@example.com,2023-08-08,2025-03-07,2,265.00,132.50,Haircut + Highlights,Ana
+C1180,Abigail,Robinson,555-935-1414,abigail.robinson@example.com,2023-01-25,2025-01-17,5,1050.00,210.00,Haircut + Color,Taylor
+C1181,Sofia,Ramirez,555-299-8668,sofia.ramirez@example.com,2024-07-23,2025-04-01,8,1410.00,176.25,Deep Conditioning,Maria
+C1182,James,Johnson,555-125-7020,james.johnson@example.com,2024-10-03,2025-02-04,3,685.00,228.33,Haircut + Highlights,Ana
+C1183,Riley,Jackson,555-846-3097,riley.jackson@example.com,2024-07-18,2025-03-17,3,605.00,201.67,Haircut + Highlights,Maria
+C1184,Elizabeth,Taylor,555-687-3022,elizabeth.taylor@example.com,2024-05-18,2025-03-06,3,165.00,55.00,Haircut,Jasmine
+C1185,Liam,Anderson,555-487-6666,liam.anderson@example.com,2024-06-21,2025-03-10,5,1050.00,210.00,Haircut + Color,Ana
+C1186,Hazel,Miller,555-230-7119,hazel.miller@example.com,2024-01-12,2025-02-27,4,885.00,221.25,Haircut + Highlights,Taylor
+C1187,Mason,Robinson,555-809-8253,mason.robinson@example.com,2023-03-07,2025-02-19,3,660.00,220.00,Haircut + Highlights,Jasmine
+C1188,Hazel,Perez,555-135-8692,hazel.perez@example.com,2024-01-15,2025-03-08,14,2310.00,165.00,Balayage,Brittany
+C1189,Sophia,Young,555-589-4281,sophia.young@example.com,2024-01-06,2025-04-22,29,4610.00,158.97,Bridal Updo,Ana
+C1190,Avery,Clark,555-257-6670,avery.clark@example.com,2024-05-18,2025-04-02,8,1370.00,171.25,Haircut + Highlights,Taylor
+C1191,Nora,Robinson,555-486-3998,nora.robinson@example.com,2024-10-31,2025-02-26,3,360.00,120.00,Haircut + Highlights,Taylor
+C1192,Elizabeth,Rodriguez,555-378-7501,elizabeth.rodriguez@example.com,2024-11-26,2025-03-22,6,1355.00,225.83,Haircut + Color,Brittany
+C1193,Abigail,Garcia,555-890-2999,abigail.garcia@example.com,2023-09-17,2024-09-23,3,520.00,173.33,Color Touch-up,Taylor
+C1194,Elizabeth,Miller,555-357-2191,elizabeth.miller@example.com,2024-03-26,2025-04-16,17,2155.00,126.76,Deep Conditioning,Jasmine
+C1195,James,Thompson,555-884-6606,james.thompson@example.com,2023-06-10,2025-03-10,4,430.00,107.50,Haircut + Color,Ana
+C1196,Emma,Lee,555-316-6259,emma.lee@example.com,2023-05-22,2025-03-18,1,45.00,45.00,Deep Conditioning,Brittany
+C1197,Scarlett,Moore,555-172-9128,scarlett.moore@example.com,2025-01-27,2025-04-12,8,1210.00,151.25,Haircut + Highlights,Maria
+C1198,Charlotte,Sanchez,555-735-7611,charlotte.sanchez@example.com,2023-09-29,2025-02-10,3,725.00,241.67,Balayage,Brittany
+C1199,Scarlett,Lee,555-536-9037,scarlett.lee@example.com,2024-08-01,2025-03-17,4,910.00,227.50,Haircut + Color,Brittany
+C1200,Noah,Perez,555-498-1463,noah.perez@example.com,2023-04-19,2025-04-15,1,320.00,320.00,Keratin Treatment,Brittany
